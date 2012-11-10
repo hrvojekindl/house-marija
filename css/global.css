@@ -1,5 +1,15 @@
     html, body {
         font-family: Georgia, "Helvetica Neue", Helvetica, Arial, serif;
+        background-image: url("../img/content-bg.jpg");
+    }
+
+    body {
+      max-width: 1200px;
+      margin: 0px auto;
+    }
+
+    a:focus {
+      outline: none;
     }
 
     /* CUSTOMIZE THE NAVBAR
@@ -24,13 +34,14 @@
     /* Downsize the brand/project name a bit */
     .navbar .brand {
       padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
     }
 
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
       padding: 15px 20px;
+      font-size: 16px;
     }
 
     /* Offset the responsive button for proper vertical alignment */
@@ -59,10 +70,9 @@
       font-size: 120px;
       margin-top: 0;
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-
-    .carousel-control:focus {
-      outline: none;
+      border-radius: 0px;
+      width: auto;
+      height: auto;
     }
 
     .carousel .item {
@@ -77,7 +87,7 @@
       background-color: transparent;
       position: static;
       max-width: 550px;
-      padding: 0 20px;
+      padding: 0 100px;
       margin-bottom: 100px;
     }
     .carousel-caption h1,
@@ -101,25 +111,13 @@
     border-radius: 0;
     margin: -20px 0;
   }
-
-  .carousel .item {
-    height: 400px;
+  
+  .carousel-caption {
+    width: 65%;
+    padding: 0 80px;
   }
   .carousel img {
     width: auto;
-    height: 400px;
-  }
-
-  .featurette {
-    height: auto;
-    padding: 0;
-  }
-  .featurette-image.pull-left,
-  .featurette-image.pull-right {
-    display: block;
-    float: none;
-    max-width: 40%;
-    margin: 0 auto 20px;
   }
 }
 
@@ -134,19 +132,10 @@
     margin-left: -20px;
     margin-right: -20px;
   }
-  .carousel .container {
 
-  }
-  .carousel .item {
-    height: 400px;
-  }
-  .carousel img {
-    height: 400px;
-  }
   .carousel-caption {
-    width: 65%;
+    margin-bottom: 60px;
     padding: 0 70px;
-    margin-bottom: 40px;
   }
   .carousel-caption h1 {
     font-size: 30px;
@@ -159,13 +148,4 @@
   .marketing .span4 + .span4 {
     margin-top: 40px;
   }
-
-  .featurette-heading {
-    font-size: 30px;
-  }
-  .featurette .lead {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
 }

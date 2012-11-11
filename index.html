@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Marija</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link href="css/global.css" rel="stylesheet" media="screen">
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -50,7 +50,7 @@
     <!-- Carousel
     ================================================== -->
     <div class="container">
-      <div id="carousel" class="carousel slide">
+      <div id="carousel" class="carousel slide" data-interval="false">
         <div class="carousel-inner">
           <div class="item active">
             <img src="img/carousel/beach.jpg" alt="">
@@ -88,15 +88,8 @@
       </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      (function($) {
-        $(function() {
-          $("#carousel").carousel({ interval: false })
-        })
-      })(window.jQuery);
-    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
 

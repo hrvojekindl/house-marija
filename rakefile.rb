@@ -6,7 +6,7 @@ def replace(name)
 end
 
 task :build do
-  FileList["*.str"].each do |f|
+  FileList["lng/*.lng"].each do |f|
     dict = {}
     lang = f.split(".", 2)[0]
     
@@ -28,7 +28,8 @@ task :build do
     end
 
     # if (!lang.eql("default"))
-      
+    #   FileUtils.rm_r lang, :force
+    #   FileUtils.cp_r 'lib/', site_ruby + '/mylib'
     # end
 
   end

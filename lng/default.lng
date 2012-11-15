@@ -1,5 +1,6 @@
-  about: 					About
-  location: 			Location
-  accommodation:	Accommodation
-  contact: 				Contact
-  lang: 					Lang
+house:					House
+about: 					About
+location: 			Location
+accommodation:	Accommodation
+contact: 				Contact
+language: 			Language

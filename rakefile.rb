@@ -6,31 +6,40 @@ def replace(name)
 end
 
 task :build do
-  FileList["lng/*.lng"].each do |f|
+  buildir = "build"
+
+  FileUtils.rm_rf Dir.glob(File.join(buildir, "/*"))
+
+  FileList["lng/*.lng"].each do |lng_file|
     dict = {}
-    lang = f.split(".", 2)[0]
+    lng = lng_file.split("/").last.split(".").first
     
-    File.open(f, "r") do |fin|
-      while (line = fin.gets)
+    if !lng.eql?("default")
+      FileUtils.mkdir File.join(buildir, lng)
+    else
+      lng = ""
+    end
+    
+    File.open(lng_file, "r") do |lng_fin|
+      while (line = lng_fin.gets)
         it = line.split(":", 2)
         dict[it[0].strip] = it[1].strip
       end
     end
 
-    os = OpenStruct.new(dict: dict)
-    closure = os.instance_eval { binding }
+    vars = OpenStruct.new(dict: dict)
+    bind = vars.instance_eval { binding }
     
-    FileList["*.rhtml"].each do |f|
-      template = File.open(f, "rb").read
-      result = ERB.new(template).result(closure)
-      rfile = f.rpartition(".")[0] + ".html"
-      File.open(rfile, "wb").write(result)
+    FileList["*.rhtml"].each do |rh_file|
+      template = File.open(rh_file, "rb").read
+      result = ERB.new(template).result(bind)
+      fname = File.join(buildir, lng, rh_file.rpartition(".")[0] + ".html")
+      File.open(fname, "wb").write(result)
     end
 
-    # if (!lang.eql("default"))
-    #   FileUtils.rm_r lang, :force
-    #   FileUtils.cp_r 'lib/', site_ruby + '/mylib'
-    # end
+    ["css", "img", "js"].each do |dir|
+      FileUtils.cp_r dir, File.join(buildir, lng, dir)
+    end
 
   end
 end

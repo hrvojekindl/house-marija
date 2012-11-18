@@ -8,6 +8,10 @@ body {
   height: 10000px;
 }
 
+section {
+  padding-top: 40px;
+}
+
 a:focus {
   outline: none;
 }
@@ -23,6 +27,17 @@ a:focus {
 .navbar .nav > li > a {
   font-size: 16px;
 }
+
+.navbar .nav > li a.lang {
+  padding-left: 20px;
+  background-position: 0px 15px;
+  background-repeat: no-repeat;
+}
+
+.navbar .nav > li a.en { background-image: url("../img/flags/en.png") }
+.navbar .nav > li a.de { background-image: url("../img/flags/de.png") }
+.navbar .nav > li a.it { background-image: url("../img/flags/it.png") }
+.navbar .nav > li a.hr { background-image: url("../img/flags/hr.png") }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

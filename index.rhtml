@@ -11,7 +11,7 @@
       <script src="js/html5shiv.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar navbar-fixed-top">
@@ -25,16 +25,16 @@
           <a class="brand" href="#"><%= replace "house" %> Marija</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="#"><%= replace "about" %></a></li>
-              <li><a href="#"><%= replace "location" %></a></li>
-              <li><a href="#"><%= replace "accommodation" %></a></li>
-              <li><a href="#"><%= replace "contact" %></a></li>
+              <li><a href="#about"><%= replace "about" %></a></li>
+              <li><a href="#location"><%= replace "location" %></a></li>
+              <li><a href="#accommodation"><%= replace "accommodation" %></a></li>
+              <li><a href="#contact"><%= replace "contact" %></a></li>
             </ul>
             <ul class="nav pull-right">
-              <li id="en"><a title="en" href="/">en</a></li>
-              <li id="it"><a title="it" href="/it/">it</a></li>
-              <li id="de"><a title="de" href="/de/">de</a></li>
-              <li id="hr"><a title="he" href="/hr/">hr</a></li>
+              <li><a title="en" class="lang en" href="/">en</a></li>
+              <li><a title="de" class="lang de" href="/de/">de</a></li>
+              <li><a title="it" class="lang it" href="/it/">it</a></li>
+              <li><a title="he" class="lang hr" href="/hr/">hr</a></li>
             </ul>
           </div>
         </div>
@@ -82,8 +82,41 @@
       </div>
     </div>
 
+    <section id="about">
+      <div class="container">
+        <h4><%= replace "about" %></h4>
+      </div>
+    </section>
+
+    <section id="location">
+      <div class="container">
+        <h4><%= replace "location" %></h4>
+      </div>
+    </section>
+
+    <section id="accommodation">
+      <div class="container">
+        <h4><%= replace "accommodation" %></h4>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h4><%= replace "contact" %></h4>
+      </div>
+    </section>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+      (function($) {
+        $(function() {
+          $("a.brand").click(function() {
+            $(".nav li").removeClass("active");
+          });
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>
 

@@ -111,8 +111,14 @@
     <script type="text/javascript">
       (function($) {
         $(function() {
-          $("a.brand").click(function() {
-            $(".nav li").removeClass("active");
+          var brand_name = $("a.brand");
+          var menu_items = $("ul.nav li");
+          var collapsible = $("div.nav-collapse");
+          brand_name.click(function() {
+            menu_items.removeClass("active");
+          });
+          menu_items.click(function() {
+            collapsible.collapse("hide");
           });
         });
       })(jQuery);

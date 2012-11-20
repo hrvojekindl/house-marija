@@ -111,14 +111,13 @@
     <script type="text/javascript">
       (function($) {
         $(function() {
-          var brand_name = $("a.brand");
           var menu_items = $("ul.nav li");
-          var collapsible = $("div.nav-collapse");
-          brand_name.click(function() {
+          $("a.brand").click(function() {
             menu_items.removeClass("active");
+            $("div.nav-collapse.in.collapse").collapse("hide");
           });
           menu_items.click(function() {
-            collapsible.collapse("hide");
+            $("div.nav-collapse.in.collapse").collapse("hide");
           });
         });
       })(jQuery);

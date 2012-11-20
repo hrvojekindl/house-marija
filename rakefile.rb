@@ -22,8 +22,11 @@ task :build do
     
     File.open(lng_file, "r") do |lng_fin|
       while (line = lng_fin.gets)
-        it = line.split(":", 2)
-        dict[it[0].strip] = it[1].strip
+        line.chomp!
+        if !line.empty? && !line.start_with?("//")
+          it = line.split(":", 2)          
+          dict[it[0].strip] = it[1].strip
+        end
       end
     end
 

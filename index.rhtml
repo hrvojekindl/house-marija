@@ -31,10 +31,10 @@
               <li><a href="#contact"><%= replace "contact" %></a></li>
             </ul>
             <ul class="nav pull-right">
-              <li><a title="en" class="lang en" href="/">en</a></li>
-              <li><a title="de" class="lang de" href="/de/">de</a></li>
-              <li><a title="it" class="lang it" href="/it/">it</a></li>
-              <li><a title="he" class="lang hr" href="/hr/">hr</a></li>
+              <li><%= replace "<english>" %></li>
+              <li><%= replace "<german>" %></li>
+              <li><%= replace "<italian>" %></li>
+              <li><%= replace "<croatian>" %></li>
             </ul>
           </div>
         </div>
@@ -111,6 +111,7 @@
     <script type="text/javascript">
       (function($) {
         $(function() {
+          var lang_items = $("a.lang");
           var menu_items = $("ul.nav li");
           $("a.brand").click(function() {
             menu_items.removeClass("active");

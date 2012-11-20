@@ -1,3 +1,9 @@
+// language tags
+<english>: 			<a title="en" class="lang en" href="/" 		style="text-decoration:none">			en</a>
+<german>:				<a title="de" class="lang de" href="/de/" style="text-decoration:none">			de</a>
+<italian>: 			<a title="it" class="lang it" href="/it/" style="text-decoration:none">			it</a>
+<croatian>:			<a title="he" class="lang hr" href="/hr/" style="text-decoration:underline">hr</a>
+
 house:					Kuća
 about: 					Početna
 location: 			Lokacija

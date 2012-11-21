@@ -2,16 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title><%= replace "house" %> Marija</title>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link href="css/global.css" rel="stylesheet" media="screen">
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
+    <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      function init_gmap() {
+        var latlon = new google.maps.LatLng(44.075123, 15.001209);
+        var elem = document.getElementById("map_canvas");
+        var map = new google.maps.Map(elem, {
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false,
+          center: latlon,
+          zoom: 11
+        });
+      }
+    </script>
   </head>
-  <body data-spy="scroll" data-target=".navbar">
+  <body onload="init_gmap()" data-spy="scroll" data-target=".navbar">
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar navbar-fixed-top">
@@ -91,6 +103,7 @@
     <section id="location">
       <div class="container">
         <h4><%= replace "location" %></h4>
+        <div id="map_canvas"></div>
       </div>
     </section>
 
@@ -108,7 +121,8 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script script type="text/javascript">      
       (function($) {
         $(function() {
           var lang_items = $("a.lang");

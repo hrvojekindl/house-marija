@@ -10,6 +10,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <%= replace "<languageJS>" %>
     <script type="text/javascript">
       function init_gmap() {
         var latlon = new google.maps.LatLng(44.075123, 15.001209);
@@ -19,6 +20,23 @@
           scrollwheel: false,
           center: latlon,
           zoom: 11
+        });
+
+        var content = document.createElement("div");
+        content.innerHTML = lang.house_marija;
+        var infowindow = new google.maps.InfoWindow({
+          content: content,
+          position: latlon
+        });
+
+        var marker = new google.maps.Marker({
+          title: lang.house_marija,
+          position: latlon,
+          map: map
+        });
+
+        google.maps.event.addListener(marker, "click", function() {
+          infowindow.open(map);
         });
       }
     </script>

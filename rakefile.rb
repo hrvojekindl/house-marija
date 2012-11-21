@@ -10,7 +10,7 @@ task :build do
 
   FileUtils.rm_rf Dir.glob(File.join(buildir, "/*"))
 
-  FileList["lng/*.lng"].each do |lng_file|
+  FileList["phtml/*.phtml"].each do |lng_file|
     dict = {}
     lng = lng_file.split("/").last.split(".").first
     
@@ -33,7 +33,7 @@ task :build do
     vars = OpenStruct.new(dict: dict)
     bind = vars.instance_eval { binding }
     
-    FileList["*.rhtml"].each do |rh_file|
+    FileList["*.thtml"].each do |rh_file|
       template = File.open(rh_file, "rb").read
       result = ERB.new(template).result(bind)
       fname = File.join(buildir, lng, rh_file.rpartition(".")[0] + ".html")

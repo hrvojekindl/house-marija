@@ -126,6 +126,10 @@ a:focus {
     border-radius: 0px;
     width: auto;
   }
+
+  #map_canvas {
+    height: 350px;
+  }
 }
 
 
@@ -151,9 +155,5 @@ a:focus {
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
-  }
-
-  #map_canvas {
-    height: 300px;
   }
 }

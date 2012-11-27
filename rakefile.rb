@@ -8,7 +8,8 @@ end
 task :build do
   buildir = "build"
 
-  FileUtils.rm_rf Dir.glob(File.join(buildir, "/*"))
+  FileUtils.rm_rf buildir
+  FileUtils.mkdir buildir
 
   FileList["phtml/*.phtml"].each do |lng_file|
     dict = {}

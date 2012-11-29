@@ -6,6 +6,7 @@
     <title><%= replace "house" %> Marija</title>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link href="css/lightbox.css" rel="stylesheet" media="screen">
     <link href="css/global.css" rel="stylesheet" media="screen">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -131,6 +132,15 @@
     <section id="accommodation">
       <div class="container">
         <h4><%= replace "accommodation" %></h4>
+        <a href="img/examples/image-1.jpg" rel="lightbox[ex]">
+          <img src="img/examples/thumb-1.jpg">
+        </a>
+        <a href="img/examples/image-2.jpg" rel="lightbox[ex]">
+          <img src="img/examples/thumb-2.jpg">
+        </a>
+        <a href="img/examples/image-3.jpg" rel="lightbox[ex]">
+          <img src="img/examples/thumb-3.jpg">
+        </a>
       </div>
     </section>
 
@@ -142,6 +152,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/lightbox.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script script type="text/javascript">      
       (function($) {

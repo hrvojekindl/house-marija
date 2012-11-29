@@ -16,6 +16,19 @@ a:focus {
   outline: none;
 }
 
+/* GALLERY
+-------------------------------------------------- */
+
+a.thumb {
+  float: left;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+img.thumb {
+  border-radius: 6px;
+}
+
 /* GOOGLE MAP
 -------------------------------------------------- */
 

@@ -115,13 +115,13 @@
 
     <section id="about">
       <div class="container">
-        <h4><%= replace "about" %></h4>
+        <h3><%= replace "about" %></h3>
       </div>
     </section>
 
     <section id="location">
       <div class="container">
-        <h4><%= replace "location" %></h4>
+        <h3><%= replace "location" %></h3>
         <div class="row-fluid">
           <div id="map_canvas" class="span8"></div>
           <div class="span4"></div>
@@ -131,9 +131,7 @@
 
     <section id="accommodation">
       <div class="container">
-        
-        <h4><%= replace "accommodation" %></h4>
-        
+        <h3><%= replace "accommodation" %></h3>
         <div class="imageRow">
           <div class="set">
             <div class="single">
@@ -153,13 +151,12 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <h4><%= replace "contact" %></h4>
+        <h3><%= replace "contact" %></h3>
       </div>
     </section>
 

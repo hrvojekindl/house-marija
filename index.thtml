@@ -18,7 +18,7 @@
         var elem = document.getElementById("map_canvas");
         var map = new google.maps.Map(elem, {
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          //scrollwheel: false,
+          scrollwheel: false,
           center: latlon,
           zoom: 11
         });

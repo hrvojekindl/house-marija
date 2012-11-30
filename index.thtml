@@ -11,7 +11,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <%= replace "<languageJS>" %>
+    <script src=<%= replace "language-js-src" %>></script>
     <script type="text/javascript">
       function init_gmap() {
         var latlon = new google.maps.LatLng(44.075123, 15.001209);
@@ -62,10 +62,10 @@
               <li><a href="#contact"><%= replace "contact" %></a></li>
             </ul>
             <ul class="nav pull-right">
-              <li><%= replace "<english>" %></li>
-              <li><%= replace "<german>" %></li>
-              <li><%= replace "<italian>" %></li>
-              <li><%= replace "<croatian>" %></li>
+              <li><a title="en" class="lang en" href="/" style=<%= replace "text-decoration-en" %>>en</a></li>
+              <li><a title="de" class="lang de" href="/de/" style=<%= replace "text-decoration-de" %>>de</a></li>
+              <li><a title="it" class="lang it" href="/it/" style=<%= replace "text-decoration-it" %>>it</a></li>
+              <li><a title="hr" class="lang hr" href="/hr/" style=<%= replace "text-decoration-hr" %>>hr</a></li>
             </ul>
           </div>
         </div>
@@ -82,7 +82,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>Example headline.</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p class="lead"><%= replace "lead1" %></p>
                 <a class="btn btn-large btn-primary" href="#">Sign up today</a>
               </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p class="lead"><%= replace "lead2" %></p>
                 <a class="btn btn-large btn-primary" href="#">Learn more</a>
               </div>
             </div>
@@ -102,7 +102,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>One more for good measure.</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p class="lead"><%= replace "lead3" %></p>
                 <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
               </div>
             </div>
@@ -131,16 +131,29 @@
 
     <section id="accommodation">
       <div class="container">
+        
         <h4><%= replace "accommodation" %></h4>
-        <a class="thumb" href="img/examples/image-1.jpg" rel="lightbox[ex]">
-          <img class="thumb" src="img/examples/thumb-1.jpg">
-        </a>
-        <a class="thumb" href="img/examples/image-2.jpg" rel="lightbox[ex]">
-          <img class="thumb" src="img/examples/thumb-2.jpg">
-        </a>
-        <a class="thumb" href="img/examples/image-3.jpg" rel="lightbox[ex]">
-          <img class="thumb" src="img/examples/thumb-3.jpg">
-        </a>
+        
+        <div class="imageRow">
+          <div class="set">
+            <div class="single">
+              <a title=<%= replace "img1-title" %> href="img/examples/image-1.jpg" rel="lightbox[ex]">
+                <img src="img/examples/thumb-1.jpg">
+              </a>
+            </div>
+            <div class="single">
+              <a title=<%= replace "img2-title" %> href="img/examples/image-2.jpg" rel="lightbox[ex]">
+                <img src="img/examples/thumb-2.jpg">
+              </a>
+            </div>
+            <div class="single">
+              <a title=<%= replace "img3-title" %> href="img/examples/image-3.jpg" rel="lightbox[ex]">
+                <img src="img/examples/thumb-3.jpg">
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 

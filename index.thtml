@@ -63,8 +63,8 @@
             </ul>
             <ul class="nav pull-right">
               <li><a title="en" class="lang en" href="/" style=<%= replace "text-decoration-en" %>>en</a></li>
-              <li><a title="de" class="lang de" href="/de/" style=<%= replace "text-decoration-de" %>>de</a></li>
-              <li><a title="it" class="lang it" href="/it/" style=<%= replace "text-decoration-it" %>>it</a></li>
+              <!-- <li><a title="de" class="lang de" href="/de/" style=<%= replace "text-decoration-de" %>>de</a></li>
+              <li><a title="it" class="lang it" href="/it/" style=<%= replace "text-decoration-it" %>>it</a></li> -->
               <li><a title="hr" class="lang hr" href="/hr/" style=<%= replace "text-decoration-hr" %>>hr</a></li>
             </ul>
           </div>
@@ -81,9 +81,9 @@
             <img src="img/carousel/beach.jpg" alt="">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Example headline.</h1>
+                <h1><%= replace "head1" %></h1>
                 <p class="lead"><%= replace "lead1" %></p>
-                <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+                <!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
               </div>
             </div>
           </div>
@@ -91,9 +91,9 @@
             <img src="img/carousel/brbinj.jpg" alt="">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h1><%= replace "head2" %></h1>
                 <p class="lead"><%= replace "lead2" %></p>
-                <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                <!--<a class="btn btn-large btn-primary" href="#">Learn more</a>-->
               </div>
             </div>
           </div>
@@ -101,9 +101,9 @@
             <img src="img/carousel/flowers.jpg" alt="">
             <div class="container">
               <div class="carousel-caption">
-                <h1>One more for good measure.</h1>
+                <h1><%= replace "head3" %></h1>
                 <p class="lead"><%= replace "lead3" %></p>
-                <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                <!--<a class="btn btn-large btn-primary" href="#">Browse gallery</a>-->
               </div>
             </div>
           </div>

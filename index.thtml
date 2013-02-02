@@ -58,7 +58,7 @@
             <ul class="nav">
               <li><a href="#about"><%= replace "about" %></a></li>
               <li><a href="#location"><%= replace "location" %></a></li>
-              <li><a href="#accommodation"><%= replace "accommodation" %></a></li>
+              <li><a href="#gallery"><%= replace "gallery" %></a></li>
               <li><a href="#contact"><%= replace "contact" %></a></li>
             </ul>
             <ul class="nav pull-right">
@@ -129,9 +129,9 @@
       </div>
     </section>
 
-    <section id="accommodation">
+    <section id="gallery">
       <div class="container">
-        <h3><%= replace "accommodation" %></h3>
+        <h3><%= replace "gallery" %></h3>
         <div class="imageRow">
           <div class="set">
             <div class="single">

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= replace "house" %> Marija</title>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
@@ -167,14 +167,16 @@
     <script script type="text/javascript">      
       (function($) {
         $(function() {
-          var lang_items = $("a.lang");
-          var menu_items = $("ul.nav li");
-          $("a.brand").click(function() {
+          var navbar = $(".navbar");
+          var brand = navbar.find("a.brand");
+          var lang_items = navbar.find("a.lang");
+          var menu_items = navbar.find("ul.nav li");
+          brand.click(function() {
             menu_items.removeClass("active");
-            $("div.nav-collapse.in.collapse").collapse("hide");
+            navbar.find("div.nav-collapse.in.collapse").collapse("hide");
           });
           menu_items.click(function() {
-            $("div.nav-collapse.in.collapse").collapse("hide");
+            navbar.find("div.nav-collapse.in.collapse").collapse("hide");
           });
         });
       })(jQuery);

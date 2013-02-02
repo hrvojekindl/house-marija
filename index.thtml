@@ -116,6 +116,7 @@
     <section id="about">
       <div class="container">
         <h3><%= replace "about" %></h3>
+        <p><%= replace "about-text" %></p>
       </div>
     </section>
 
@@ -123,8 +124,7 @@
       <div class="container">
         <h3><%= replace "location" %></h3>
         <div class="row-fluid">
-          <div id="map_canvas" class="span8"></div>
-          <div class="span4"></div>
+          <div id="map_canvas" class="span12"></div>
         </div>
       </div>
     </section>

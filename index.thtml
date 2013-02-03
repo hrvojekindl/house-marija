@@ -15,7 +15,7 @@
     <script type="text/javascript">
       function init_gmap() {
         var latlon = new google.maps.LatLng(44.075123, 15.001209);
-        var elem = document.getElementById("map_canvas");
+        var elem = document.getElementById('map_canvas');
         var map = new google.maps.Map(elem, {
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           scrollwheel: false,
@@ -23,7 +23,7 @@
           zoom: 11
         });
 
-        var content = document.createElement("div");
+        var content = document.createElement('div');
         content.innerHTML = lang.house_marija;
         var infowindow = new google.maps.InfoWindow({
           content: content,
@@ -36,7 +36,7 @@
           map: map
         });
 
-        google.maps.event.addListener(marker, "click", function() {
+        google.maps.event.addListener(marker, 'click', function() {
           infowindow.open(map);
         });
       }
@@ -133,23 +133,10 @@
       <div class="container">
         <h3><%= replace "gallery" %></h3>
         <div class="imageRow">
-          <div class="set">
-            <div class="single">
-              <a title=<%= replace "img1-title" %> href="img/examples/image-1.jpg" rel="lightbox[ex]">
-                <img src="img/examples/thumb-1.jpg">
-              </a>
-            </div>
-            <div class="single">
-              <a title=<%= replace "img2-title" %> href="img/examples/image-2.jpg" rel="lightbox[ex]">
-                <img src="img/examples/thumb-2.jpg">
-              </a>
-            </div>
-            <div class="single">
-              <a title=<%= replace "img3-title" %> href="img/examples/image-3.jpg" rel="lightbox[ex]">
-                <img src="img/examples/thumb-3.jpg">
-              </a>
-            </div>
-          </div>
+          <div class="set" data-image-set="house" data-image-count="10"></div>
+        </div>
+        <div class="imageRow">
+          <div class="set" data-image-set="brbinj" data-image-count="10"></div>
         </div>
       </div>
     </section>
@@ -167,17 +154,34 @@
     <script script type="text/javascript">      
       (function($) {
         $(function() {
-          var navbar = $(".navbar");
-          var brand = navbar.find("a.brand");
-          var lang_items = navbar.find("a.lang");
-          var menu_items = navbar.find("ul.nav li");
+          var navbar = $('.navbar');
+          var brand = navbar.find('a.brand');
+          var lang_items = navbar.find('a.lang');
+          var menu_items = navbar.find('ul.nav li');
           brand.click(function() {
-            menu_items.removeClass("active");
-            navbar.find("div.nav-collapse.in.collapse").collapse("hide");
+            menu_items.removeClass('active');
+            navbar.find('div.nav-collapse.in.collapse').collapse('hide');
           });
           menu_items.click(function() {
-            navbar.find("div.nav-collapse.in.collapse").collapse("hide");
+            navbar.find('div.nav-collapse.in.collapse').collapse('hide');
           });
+
+          $('.imageRow > .set').each(function() {
+            var elem = $(this);
+            var name = elem.attr('data-image-set');
+            var count = elem.attr('data-image-count');
+            for (var i = 1; i <= count; i++) {
+              var title = lang[name + '_title_' + i];
+              if (!title) title = '';
+              elem.append([
+                '<div class="single">',
+                  '<a title="' + title + '" href="img/' + name + '/' + name + '-' + i + '.jpg" rel="lightbox[' + name + ']">',
+                    '<img src="img/' + name + '/thumb/' + name + '-' + i + '.jpg">',
+                  '</a>',
+                '</div>'
+              ].join(''));
+            }
+          })
         });
       })(jQuery);
     </script>

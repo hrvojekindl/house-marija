@@ -1,3 +1,3 @@
 window.lang = {
-	house_marija: "House Marija"
+	house_marija: 'House Marija'
 };

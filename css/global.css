@@ -8,6 +8,10 @@ body {
   height: 10000px;
 }
 
+p {
+  font-size: 16px;
+}
+
 section {
   padding-top: 40px;
 }
@@ -33,14 +37,7 @@ section h3 {
   display: table;
 }
 .imageRow .set {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
   float: left;
-  transition: all 0.2s ease-out 0s;
-}
-.imageRow .set:hover {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
 }
 .imageRow .single {
   float: left;

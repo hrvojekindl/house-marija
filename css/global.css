@@ -5,7 +5,7 @@ html, body {
 
 body {
   padding-top: 50px;
-  height: 10000px;
+  height: 3000px;
 }
 
 p {
@@ -25,50 +25,20 @@ section h3 {
   text-shadow: 0 1px 0 #FFFFFF;
 }
 
-/* GALLERY
+/* ELASTISLIDE
 -------------------------------------------------- */
 
-.imageRow {
-  margin: 20px 0;
-  height: 130px;
-  overflow-y: hidden;
+.elastislide-wrapper {
+  min-height: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
 }
-.imageRow:after {
-  clear: both;
-  content: "";
-  display: table;
+
+.elastislide-horizontal {
 }
-.imageRow .set {
-  float: left;
-}
-.imageRow .single {
-  float: left;
-}
-.imageRow .single a {
-  border-radius: 4px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
-  display: block;
-  float: left;
-  line-height: 1em;
-  margin-right: 40px;
-  padding: 4px;
-  transition: all 0.2s ease-out 0s;
-}
-.imageRow .single a img {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-.imageRow .single a:hover {
-  background-color: #89CFF0;
-}
-.imageRow .set .single a {
-  border-radius: 4px;
-  box-shadow: none;
-  margin-right: 0;
-}
-.imageRow .set .single a:hover {
-  background-color: #89CFF0;
-  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+
+.elastislide-carousel ul li a img:hover {
+  opacity: 0.6;
 }
 
 /* GOOGLE MAP
@@ -126,6 +96,7 @@ section h3 {
 .carousel .item {
   height: 400px;
 }
+
 .carousel img {
   min-width: 100%;
   height: 400px;
@@ -139,6 +110,7 @@ section h3 {
   padding: 0 100px;
   margin-bottom: 150px;
 }
+
 .carousel-caption h1,
 .carousel-caption .lead {
   margin: 0;
@@ -146,6 +118,7 @@ section h3 {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
+
 .carousel-caption .btn {
   margin-top: 10px;
 }
@@ -205,9 +178,11 @@ section h3 {
     margin-bottom: 60px;
     padding: 0 70px;
   }
+
   .carousel-caption h1 {
     font-size: 30px;
   }
+
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;

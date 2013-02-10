@@ -6,6 +6,7 @@ html, body {
 body {
   padding-top: 50px;
   height: 10000px;
+  color: #555;
 }
 
 p {
@@ -21,7 +22,6 @@ a:focus {
 }
 
 section h3 {
-  color: #555;
   text-shadow: 0 1px 0 #FFFFFF;
 }
 

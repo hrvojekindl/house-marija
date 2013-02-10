@@ -44,6 +44,7 @@ section h3 {
 #map_canvas {
   height: 400px;
   border-radius: 6px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -71,6 +72,11 @@ section h3 {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+
+.carousel.slide {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 6px;
+}
 
 .carousel .container {
   position: absolute;
@@ -162,6 +168,10 @@ section h3 {
 @media (max-width: 767px) {
   .container {
     margin: 0 0px;
+  }
+
+  .carousel.slide {
+    border-radius: 0px;
   }
 
   .carousel .item {

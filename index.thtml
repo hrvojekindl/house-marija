@@ -135,6 +135,7 @@
         <h3><%= replace "gallery" %></h3>
         <ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
         <ul class="elastislide-list" data-image-set="brbinj" data-image-count="10"></ul>
+        <ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
       </div>
     </section>
 

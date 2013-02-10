@@ -121,7 +121,18 @@
     <section id="about">
       <div class="container">
         <h3><%= replace "about" %></h3>
-        <p><%= replace "about-text" %></p>
+        <div class="row-fluid">
+          <p class="span8"><%= replace "about-text" %></p>
+          <ul id="house-bullets" class="span4">
+            <li>4-5 persons</li>
+            <li>2 double rooms with 1 additional bed available</li>
+            <li>fully equipped kitchen</li>
+            <li>interior cca 50m<sup>2</sup></li>
+            <li>1 full bathroom, including a washing machine</li>
+            <li>20m from the sea</li>
+            <li>200m from the beach</li>
+          </ul>
+        </div>
         <ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
       </div>
     </section>

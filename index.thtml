@@ -34,7 +34,11 @@
         var marker = new google.maps.Marker({
           title: lang.house_marija,
           position: latlon,
-          map: map
+          map: map,
+          icon: new google.maps.MarkerImage(
+            'img/map/villa.png',
+            new google.maps.Size(32, 37)
+          )
         });
 
         google.maps.event.addListener(marker, 'click', function() {

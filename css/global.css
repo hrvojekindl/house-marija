@@ -32,6 +32,8 @@ section h3 {
   min-height: 20px;
   border-radius: 16px;
   margin-top: 20px;
+  background-color: #FAFAFA;
+  background-image: linear-gradient(to bottom, #FAFAFA, #F2F2F2);
 }
 
 .elastislide-carousel ul li a img:hover {

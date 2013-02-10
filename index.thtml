@@ -122,6 +122,7 @@
       <div class="container">
         <h3><%= replace "about" %></h3>
         <p><%= replace "about-text" %></p>
+        <ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
       </div>
     </section>
 
@@ -131,15 +132,14 @@
         <div class="row-fluid">
           <div id="map_canvas" class="span12"></div>
         </div>
+        <ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
       </div>
     </section>
 
     <section id="gallery">
       <div class="container">
         <h3><%= replace "gallery" %></h3>
-        <ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
         <ul class="elastislide-list" data-image-set="brbinj" data-image-count="10"></ul>
-        <ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
       </div>
     </section>
 

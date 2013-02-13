@@ -1,208 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= replace "house" %> Marija</title>
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <link href="css/lightbox.css" rel="stylesheet" media="screen">
-    <link href="css/elastislide.css" rel="stylesheet" media="screen">
-    <link href="css/global.css" rel="stylesheet" media="screen">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <script src=<%= replace "language-js-src" %>></script>
-    <script type="text/javascript">
-      function init_gmap() {
-        var latlon = new google.maps.LatLng(44.075123, 15.001209);
-        var elem = document.getElementById('map_canvas');
-        var map = new google.maps.Map(elem, {
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false,
-          center: latlon,
-          zoom: 11
-        });
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title><%= replace "house" %> Marija</title>
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+		<link href="css/lightbox.css" rel="stylesheet" media="screen">
+		<link href="css/elastislide.css" rel="stylesheet" media="screen">
+		<link href="css/global.css" rel="stylesheet" media="screen">
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<script src=<%= replace "language-js-src" %>></script>
+		<script type="text/javascript">
+			function init_gmap() {
+				var latlon = new google.maps.LatLng(44.075123, 15.001209);
+				var elem = document.getElementById('map_canvas');
+				var map = new google.maps.Map(elem, {
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					scrollwheel: false,
+					center: latlon,
+					zoom: 11
+				});
 
-        var content = document.createElement('div');
-        content.innerHTML = lang.house_marija;
-        var infowindow = new google.maps.InfoWindow({
-          content: content,
-          position: latlon
-        });
+				var content = document.createElement('div');
+				content.innerHTML = lang.house_marija;
+				var infowindow = new google.maps.InfoWindow({
+					content: content,
+					position: latlon
+				});
 
-        var marker = new google.maps.Marker({
-          title: lang.house_marija,
-          position: latlon,
-          map: map,
-          icon: new google.maps.MarkerImage(
-            'img/map/villa.png',
-            new google.maps.Size(32, 37)
-          )
-        });
+				var marker = new google.maps.Marker({
+					title: lang.house_marija,
+					position: latlon,
+					map: map,
+					icon: new google.maps.MarkerImage(
+						'img/map/villa.png',
+						new google.maps.Size(32, 37)
+					)
+				});
 
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map);
-        });
-      }
-    </script>
-  </head>
-  <body onload="init_gmap()" data-spy="scroll" data-target=".navbar">
-    <!-- NAVBAR
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#"><%= replace "house" %> Marija</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="#about"><%= replace "about" %></a></li>
-              <li><a href="#location"><%= replace "location" %></a></li>
-              <li><a href="#gallery"><%= replace "gallery" %></a></li>
-              <li><a href="#contact"><%= replace "contact" %></a></li>
-            </ul>
-            <ul class="nav pull-right">
-              <li><a title="en" class="lang en" href="/" style=<%= replace "text-decoration-en" %>>en</a></li>
-              <!-- <li><a title="de" class="lang de" href="/de/" style=<%= replace "text-decoration-de" %>>de</a></li>
-              <li><a title="it" class="lang it" href="/it/" style=<%= replace "text-decoration-it" %>>it</a></li> -->
-              <li><a title="hr" class="lang hr" href="/hr/" style=<%= replace "text-decoration-hr" %>>hr</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.open(map);
+				});
+			}
+		</script>
+	</head>
+	<body onload="init_gmap()" data-spy="scroll" data-target=".navbar">
+		<!-- NAVBAR
+		================================================== -->
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="#"><%= replace "house" %> Marija</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="#about"><%= replace "about" %></a></li>
+							<li><a href="#location"><%= replace "location" %></a></li>
+							<li><a href="#gallery"><%= replace "gallery" %></a></li>
+							<li><a href="#contact"><%= replace "contact" %></a></li>
+						</ul>
+						<ul class="nav pull-right">
+							<li><a title="en" class="lang en" href="/" style=<%= replace "text-decoration-en" %>>en</a></li>
+							<!-- <li><a title="de" class="lang de" href="/de/" style=<%= replace "text-decoration-de" %>>de</a></li>
+							<li><a title="it" class="lang it" href="/it/" style=<%= replace "text-decoration-it" %>>it</a></li> -->
+							<li><a title="hr" class="lang hr" href="/hr/" style=<%= replace "text-decoration-hr" %>>hr</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Carousel
-    ================================================== -->
-    <div class="container">
-      <div id="carousel" class="carousel slide" data-interval="false">
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="img/carousel/beach.jpg" alt="">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1><%= replace "head1" %></h1>
-                <p class="lead"><%= replace "lead1" %></p>
-                <!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/carousel/brbinj.jpg" alt="">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1><%= replace "head2" %></h1>
-                <p class="lead"><%= replace "lead2" %></p>
-                <!--<a class="btn btn-large btn-primary" href="#">Learn more</a>-->
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/carousel/flowers.jpg" alt="">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1><%= replace "head3" %></h1>
-                <p class="lead"><%= replace "lead3" %></p>
-                <!--<a class="btn btn-large btn-primary" href="#">Browse gallery</a>-->
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#carousel" data-slide="prev">&lsaquo;</a>
-        <a class="right carousel-control" href="#carousel" data-slide="next">&rsaquo;</a>
-      </div>
-    </div>
+		<!-- Carousel
+		================================================== -->
+		<div class="container">
+			<div id="carousel" class="carousel slide" data-interval="false">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/carousel/beach.jpg" alt="">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><%= replace "head1" %></h1>
+								<p class="lead"><%= replace "lead1" %></p>
+								<!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/carousel/brbinj.jpg" alt="">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><%= replace "head2" %></h1>
+								<p class="lead"><%= replace "lead2" %></p>
+								<!--<a class="btn btn-large btn-primary" href="#">Learn more</a>-->
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/carousel/flowers.jpg" alt="">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><%= replace "head3" %></h1>
+								<p class="lead"><%= replace "lead3" %></p>
+								<!--<a class="btn btn-large btn-primary" href="#">Browse gallery</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#carousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
 
-    <section id="about">
-      <div class="container">
-        <h3><%= replace "about" %></h3>
-        <div class="row-fluid">
-          <p class="span8"><%= replace "about-text" %></p>
-          <div class="well well-small span4">
-            <ul id="house-bullets">
-              <li>4-5 persons</li>
-              <li>2 double rooms with 1 additional bed available</li>
-              <li>fully equipped kitchen</li>
-              <li>interior cca 50m<sup>2</sup></li>
-              <li>1 full bathroom</li>
-              <li>20m from the sea</li>
-            </ul>
-          </div>
-        </div>
-        <ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
-      </div>
-    </section>
+		<section id="about">
+			<div class="container">
+				<h3><%= replace "about" %></h3>
+				<div class="row-fluid">
+					<p class="span8"><%= replace "about-text" %></p>
+					<div class="well well-small span4">
+						<ul id="house-bullets">
+							<li>4-5 persons</li>
+							<li>2 double rooms with 1 additional bed available</li>
+							<li>fully equipped kitchen</li>
+							<li>interior cca 50m<sup>2</sup></li>
+							<li>1 full bathroom</li>
+							<li>20m from the sea</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
+			</div>
+		</section>
 
-    <section id="location">
-      <div class="container">
-        <h3><%= replace "location" %></h3>
-        <div class="row-fluid">
-          <div id="map_canvas" class="span12"></div>
-        </div>
-        <ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
-      </div>
-    </section>
+		<section id="location">
+			<div class="container">
+				<h3><%= replace "location" %></h3>
+				<div class="row-fluid">
+					<div id="map_canvas" class="span12"></div>
+				</div>
+				<ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
+			</div>
+		</section>
 
-    <section id="gallery">
-      <div class="container">
-        <h3><%= replace "gallery" %></h3>
-        <ul class="elastislide-list" data-image-set="brbinj" data-image-count="10"></ul>
-      </div>
-    </section>
+		<section id="gallery">
+			<div class="container">
+				<h3><%= replace "gallery" %></h3>
+				<ul class="elastislide-list" data-image-set="brbinj" data-image-count="10"></ul>
+			</div>
+		</section>
 
-    <section id="contact">
-      <div class="container">
-        <h3><%= replace "contact" %></h3>
-      </div>
-    </section>
+		<section id="contact">
+			<div class="container">
+				<h3><%= replace "contact" %></h3>
+			</div>
+		</section>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script script type="text/javascript">      
-      (function($) {
-        $(function() {
-          var navbar = $('.navbar');
-          var brand = navbar.find('a.brand');
-          var lang_items = navbar.find('a.lang');
-          var menu_items = navbar.find('ul.nav li');
-          brand.click(function() {
-            menu_items.removeClass('active');
-            navbar.find('div.nav-collapse.in.collapse').collapse('hide');
-          });
-          menu_items.click(function() {
-            navbar.find('div.nav-collapse.in.collapse').collapse('hide');
-          });
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script script type="text/javascript">      
+			(function($) {
+				$(function() {
+					var navbar = $('.navbar');
+					var brand = navbar.find('a.brand');
+					var lang_items = navbar.find('a.lang');
+					var menu_items = navbar.find('ul.nav li');
+					brand.click(function() {
+						menu_items.removeClass('active');
+						navbar.find('div.nav-collapse.in.collapse').collapse('hide');
+					});
+					menu_items.click(function() {
+						navbar.find('div.nav-collapse.in.collapse').collapse('hide');
+					});
 
-          $('ul.elastislide-list').each(function() {
-            var elem = $(this);
-            var name = elem.attr('data-image-set');
-            var count = elem.attr('data-image-count');
-            for (var i = 1; i <= count; i++) {
-              var title = lang[name + '_title_' + i];
-              if (!title) title = '';
-              elem.append([
-                '<li>',
-                  '<a title="' + title + '" href="img/' + name + '/' + name + '-' + i + '.jpg" rel="lightbox[' + name + ']">',
-                    '<img src="img/' + name + '/thumb/' + name + '-' + i + '.jpg">',
-                  '</a>',
-                '</li>'
-              ].join(''));
-            }
-            elem.elastislide();
-          });
+					$('ul.elastislide-list').each(function() {
+						var elem = $(this);
+						var name = elem.attr('data-image-set');
+						var count = elem.attr('data-image-count');
+						for (var i = 1; i <= count; i++) {
+							var title = lang[name + '_title_' + i];
+							if (!title) title = '';
+							elem.append([
+								'<li>',
+									'<a title="' + title + '" href="img/' + name + '/' + name + '-' + i + '.jpg" rel="lightbox[' + name + ']">',
+										'<img src="img/' + name + '/thumb/' + name + '-' + i + '.jpg">',
+									'</a>',
+								'</li>'
+							].join(''));
+						}
+						elem.elastislide();
+					});
 
-        });
-      })(jQuery);
-    </script>
-  </body>
+				});
+			})(jQuery);
+		</script>
+	</body>
 </html>
 

@@ -140,8 +140,8 @@
 			<div class="container">
 				<h3><%= replace "location" %></h3>
 				<div class="row-fluid">
-					<p class="span4"><%= replace "location-text" %></p>
-					<div id="map_canvas" class="span8"></div>
+					<p class="span5"><%= replace "location-text" %></p>
+					<div id="map_canvas" class="span7"></div>
 				</div>
 				<ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
 			</div>

@@ -52,13 +52,6 @@ li {
 	}
 }
 
-/* WELL */
-
-.well-small {
-	border-radius: 6px;
-	margin-bottom: 0px;
-}
-
 /* ELASTISLIDE */
 
 .elastislide-wrapper {
@@ -212,4 +205,9 @@ li {
 
 #about .container .row-fluid ul {
 	padding-left: 16px;
+}
+
+#about .well-small {
+	border-radius: 6px;
+	margin-bottom: 0px;
 }

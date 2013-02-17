@@ -11,40 +11,6 @@
 		<link href="css/global.css" rel="stylesheet" media="screen">
 		<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src=<%= replace "language-js-src" %>></script>
-		<script type="text/javascript">
-			function init_gmap() {
-				var house = new google.maps.LatLng(44.075123, 15.001209);
-				var center = new google.maps.LatLng(43.995244, 15.086353)
-				var elem = document.getElementById('map_canvas');
-				var map = new google.maps.Map(elem, {
-					mapTypeId: google.maps.MapTypeId.ROADMAP,
-					scrollwheel: false,
-					center: center,
-					zoom: 10
-				});
-
-				var content = document.createElement('div');
-				content.innerHTML = lang.house_marija;
-				var infowindow = new google.maps.InfoWindow({
-					content: content,
-					position: house
-				});
-
-				var marker = new google.maps.Marker({
-					title: lang.house_marija,
-					position: house,
-					map: map,
-					icon: new google.maps.MarkerImage(
-						'img/map/villa.png',
-						new google.maps.Size(32, 37)
-					)
-				});
-
-				google.maps.event.addListener(marker, 'click', function() {
-					infowindow.open(map);
-				});
-			}
-		</script>
 	</head>
 	<body onload="init_gmap()" data-spy="scroll" data-target=".navbar">
 		
@@ -178,6 +144,44 @@
 		<script src="js/modernizr.js"></script>
 		<script src="js/jquery.elastislide.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+			function init_gmap() {
+				(function($) {
+					$(function() {
+						var center_pos = new google.maps.LatLng(43.995244, 15.086353);
+						var housem_pos = new google.maps.LatLng(44.075123, 15.001209);
+						// var sahrun_pos = new google.maps.LatLng(44.133685, 14.871704);
+						// var velira_pos = new google.maps.LatLng(44.133685, 14.871704);
+						// var telasc_pos = new google.maps.LatLng(44.133685, 14.871704);
+						// var kornat_pos = new google.maps.LatLng(44.133685, 14.871704);
+
+						var map = new google.maps.Map($('#map_canvas')[0], {
+							mapTypeId: google.maps.MapTypeId.ROADMAP,
+							scrollwheel: false,
+							center: center_pos,
+							zoom: 10
+						});
+
+						var house_marker = new google.maps.Marker({
+							map: map,
+							position: housem_pos,
+							title: lang.house_marija,
+							icon: new google.maps.MarkerImage(
+								'img/map/villa.png',
+								new google.maps.Size(32, 37)
+							)
+						});
+
+						google.maps.event.addListener(house_marker, 'click', function() {
+							(new google.maps.InfoWindow({
+								content: $('<div>' + lang.house_marija + '</div>')[0],
+								position: housem_pos
+							})).open(map);
+						});
+					});
+				})(jQuery);
+			}
+		</script>
 		<script script type="text/javascript">      
 			(function($) {
 				$(function() {

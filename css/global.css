@@ -27,6 +27,20 @@ li {
 	line-height: 24px;
 }
 
+.well-small {
+	border-radius: 6px;
+	margin-bottom: 0px;
+}
+
+.well-small ul {
+	padding-left: 2px;
+	margin-bottom: 0px;
+}
+
+.well-small span {
+	padding-left: 24px;
+}
+
 .firstcharacter { 
 	float: left; 
 	font-size: 75px; 
@@ -199,19 +213,4 @@ li {
 	.carousel-caption .btn {
 		font-size: 18px;
 	}
-}
-
-/* ABOUT */
-
-#about .container .row-fluid ul {
-	padding-left: 2px;
-}
-
-#about .well-small {
-	border-radius: 6px;
-	margin-bottom: 0px;
-}
-
-#about ul {
-	margin-bottom: 0px;
 }

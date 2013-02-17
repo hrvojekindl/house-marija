@@ -123,6 +123,7 @@
 				<div class="row-fluid">
 					<p class="span8"><%= replace "about-text" %></p>
 					<div class="well well-small span4">
+						<span><%= replace "house-bullet-title" %></span>
 						<ul id="house-bullets">
 							<li><%= replace "house-bullet1" %></li>
 							<li><%= replace "house-bullet2" %></li>
@@ -140,7 +141,19 @@
 		<section id="location">
 			<div class="container">
 				<h3><%= replace "location" %></h3>
-				<p><%= replace "location-text" %></p>
+				<div class="row-fluid">
+					<p class="span8"><%= replace "location-text" %></p>
+					<div class="well well-small span4">
+						<span><%= replace "location-bullet-title" %></span>
+						<ul id="location-bullets">
+							<li><%= replace "location-bullet1" %></li>
+							<li><%= replace "location-bullet2" %></li>
+							<li><%= replace "location-bullet3" %></li>
+							<li><%= replace "location-bullet4" %></li>
+							<li><%= replace "location-bullet5" %></li>
+						</ul>
+					</div>
+				</div>
 				<div id="map_canvas"></div>
 				<ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
 			</div>

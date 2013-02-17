@@ -154,51 +154,54 @@
 							scrollwheel: false,
 							zoom: 10
 						});
-						var housem_marker = new google.maps.Marker({
-							position: new google.maps.LatLng(44.075123, 15.001209),
-							title: lang.house_marija,
-							icon: new google.maps.MarkerImage(
-								'img/map/villa.png', 
-								new google.maps.Size(32, 37)
-							),
-							map: map
-						});
-						var sakaru_marker = new google.maps.Marker({
-							position: new google.maps.LatLng(44.133685, 14.871704),
-							title: lang.saharun_beach,
-							icon: new google.maps.MarkerImage(
-								'img/map/palm-tree.png',
-								new google.maps.Size(32, 37)
-							),
-							map: map
-						});
-						var velira_marker = new google.maps.Marker({
-							position: new google.maps.LatLng(44.152073, 14.820347),
-							title: lang.veli_rat_lighthouse,
-							icon: new google.maps.MarkerImage(
-								'img/map/lighthouse.png',
-								new google.maps.Size(32, 37)
-							),
-							map: map
-						});
-						var telasc_marker = new google.maps.Marker({
-							position: new google.maps.LatLng(43.891437, 15.155771),
-							title: lang.telascica_nature_park,
-							icon: new google.maps.MarkerImage(
-								'img/map/fjord.png',
-								new google.maps.Size(32, 37)
-							),
-							map: map
-						});
-						var kornat_marker = new google.maps.Marker({
-							position: new google.maps.LatLng(43.823118, 15.29726),
-							title: lang.kornati_national_park,
-							icon: new google.maps.MarkerImage(
-								'img/map/shore.png',
-								new google.maps.Size(32, 37)
-							),
-							map: map
-						});
+						var markers = [
+							{
+								pos: [44.075123, 15.001209],
+								title: lang.house_marija,
+								img: 'img/map/villa.png'
+							},
+							{
+								pos: [44.133685, 14.871704],
+								title: lang.saharun_beach,
+								img: 'img/map/palm-tree.png'
+							},
+							{
+								pos: [44.152073, 14.820347],
+								title: lang.veli_rat_lighthouse,
+								img: 'img/map/lighthouse.png'
+							},
+							{
+								pos: [43.891437, 15.155771],
+								title: lang.telascica_nature_park,
+								img: 'img/map/fjord.png'
+							},
+							{
+								pos: [43.823118, 15.29726],
+								title: lang.kornati_national_park,
+								img: 'img/map/shore.png'
+							}
+						];
+						var infowindow = null;
+						for (var i = 0; i < markers.length; i++) {
+							var mopt = markers[i];
+							var marker = new google.maps.Marker({
+								position: new google.maps.LatLng(mopt.pos[0], mopt.pos[1]),
+								icon: new google.maps.MarkerImage(mopt.img,
+									new google.maps.Size(32, 37)),
+								title: mopt.title,
+								map: map
+							});
+							(function(mopt, marker) {
+								google.maps.event.addListener(marker, 'click', function() {
+									if (infowindow) infowindow.close();
+									infowindow = new google.maps.InfoWindow({
+										content: $('<div>' + mopt.title + '</div>')[0],
+										position: marker.getPosition()
+									});
+									infowindow.open(map);
+								});
+							})(mopt, marker);
+						}
 					});
 				})(jQuery);
 			}

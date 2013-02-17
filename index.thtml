@@ -13,25 +13,26 @@
 		<script src=<%= replace "language-js-src" %>></script>
 		<script type="text/javascript">
 			function init_gmap() {
-				var latlon = new google.maps.LatLng(44.075123, 15.001209);
+				var house = new google.maps.LatLng(44.075123, 15.001209);
+				var center = new google.maps.LatLng(43.995244, 15.086353)
 				var elem = document.getElementById('map_canvas');
 				var map = new google.maps.Map(elem, {
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
 					scrollwheel: false,
-					center: latlon,
-					zoom: 11
+					center: center,
+					zoom: 10
 				});
 
 				var content = document.createElement('div');
 				content.innerHTML = lang.house_marija;
 				var infowindow = new google.maps.InfoWindow({
 					content: content,
-					position: latlon
+					position: house
 				});
 
 				var marker = new google.maps.Marker({
 					title: lang.house_marija,
-					position: latlon,
+					position: house,
 					map: map,
 					icon: new google.maps.MarkerImage(
 						'img/map/villa.png',
@@ -123,12 +124,12 @@
 					<p class="span8"><%= replace "about-text" %></p>
 					<div class="well well-small span4">
 						<ul id="house-bullets">
-							<li>4-5 persons</li>
-							<li>2 double rooms with 1 additional bed available</li>
-							<li>fully equipped kitchen</li>
-							<li>interior cca 50 m<sup>2</sup></li>
-							<li>1 full bathroom</li>
-							<li>20 m from the sea</li>
+							<li><%= replace "house-bullet1" %></li>
+							<li><%= replace "house-bullet2" %></li>
+							<li><%= replace "house-bullet3" %></li>
+							<li><%= replace "house-bullet4" %></li>
+							<li><%= replace "house-bullet5" %></li>
+							<li><%= replace "house-bullet6" %></li>
 						</ul>
 					</div>
 				</div>
@@ -139,10 +140,8 @@
 		<section id="location">
 			<div class="container">
 				<h3><%= replace "location" %></h3>
-				<div class="row-fluid">
-					<p class="span5"><%= replace "location-text" %></p>
-					<div id="map_canvas" class="span7"></div>
-				</div>
+				<p><%= replace "location-text" %></p>
+				<div id="map_canvas"></div>
 				<ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
 			</div>
 		</section>

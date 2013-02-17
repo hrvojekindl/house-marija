@@ -148,35 +148,56 @@
 			function init_gmap() {
 				(function($) {
 					$(function() {
-						var center_pos = new google.maps.LatLng(43.995244, 15.086353);
-						var housem_pos = new google.maps.LatLng(44.075123, 15.001209);
-						// var sahrun_pos = new google.maps.LatLng(44.133685, 14.871704);
-						// var velira_pos = new google.maps.LatLng(44.133685, 14.871704);
-						// var telasc_pos = new google.maps.LatLng(44.133685, 14.871704);
-						// var kornat_pos = new google.maps.LatLng(44.133685, 14.871704);
-
 						var map = new google.maps.Map($('#map_canvas')[0], {
+							center: new google.maps.LatLng(43.995244, 15.086353),
 							mapTypeId: google.maps.MapTypeId.ROADMAP,
 							scrollwheel: false,
-							center: center_pos,
 							zoom: 10
 						});
-
-						var house_marker = new google.maps.Marker({
-							map: map,
-							position: housem_pos,
+						var housem_marker = new google.maps.Marker({
+							position: new google.maps.LatLng(44.075123, 15.001209),
 							title: lang.house_marija,
 							icon: new google.maps.MarkerImage(
-								'img/map/villa.png',
+								'img/map/villa.png', 
 								new google.maps.Size(32, 37)
-							)
+							),
+							map: map
 						});
-
-						google.maps.event.addListener(house_marker, 'click', function() {
-							(new google.maps.InfoWindow({
-								content: $('<div>' + lang.house_marija + '</div>')[0],
-								position: housem_pos
-							})).open(map);
+						var sakaru_marker = new google.maps.Marker({
+							position: new google.maps.LatLng(44.133685, 14.871704),
+							title: lang.saharun_beach,
+							icon: new google.maps.MarkerImage(
+								'img/map/palm-tree.png',
+								new google.maps.Size(32, 37)
+							),
+							map: map
+						});
+						var velira_marker = new google.maps.Marker({
+							position: new google.maps.LatLng(44.152073, 14.820347),
+							title: lang.veli_rat_lighthouse,
+							icon: new google.maps.MarkerImage(
+								'img/map/lighthouse.png',
+								new google.maps.Size(32, 37)
+							),
+							map: map
+						});
+						var telasc_marker = new google.maps.Marker({
+							position: new google.maps.LatLng(43.891437, 15.155771),
+							title: lang.telascica_nature_park,
+							icon: new google.maps.MarkerImage(
+								'img/map/fjord.png',
+								new google.maps.Size(32, 37)
+							),
+							map: map
+						});
+						var kornat_marker = new google.maps.Marker({
+							position: new google.maps.LatLng(43.823118, 15.29726),
+							title: lang.kornati_national_park,
+							icon: new google.maps.MarkerImage(
+								'img/map/shore.png',
+								new google.maps.Size(32, 37)
+							),
+							map: map
 						});
 					});
 				})(jQuery);

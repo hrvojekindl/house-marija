@@ -28,7 +28,6 @@
 						<ul class="nav">
 							<li><a href="#about"><%= replace "about" %></a></li>
 							<li><a href="#location"><%= replace "location" %></a></li>
-							<li><a href="#gallery"><%= replace "gallery" %></a></li>
 							<li><a href="#contact"><%= replace "contact" %></a></li>
 						</ul>
 						<ul class="nav pull-right">
@@ -100,10 +99,11 @@
 						</ul>
 					</div>
 				</div>
-				<ul class="elastislide-list" data-image-set="house" data-image-count="10"></ul>
+				<ul class="elastislide-list" data-image-sets="house brbinj" data-image-counts="10 10"></ul>
 			</div>
 		</section>
 
+		<!-- LOCATION -->
 		<section id="location">
 			<div class="container">
 				<h3><%= replace "location" %></h3>
@@ -121,23 +121,18 @@
 					</div>
 				</div>
 				<div id="map_canvas"></div>
-				<ul class="elastislide-list" data-image-set="island" data-image-count="10"></ul>
+				<ul class="elastislide-list" data-image-sets="island" data-image-counts="10"></ul>
 			</div>
 		</section>
 
-		<section id="gallery">
-			<div class="container">
-				<h3><%= replace "gallery" %></h3>
-				<ul class="elastislide-list" data-image-set="brbinj" data-image-count="10"></ul>
-			</div>
-		</section>
-
+		<!-- CONTACT -->
 		<section id="contact">
 			<div class="container">
 				<h3><%= replace "contact" %></h3>
 			</div>
 		</section>
 
+		<!-- SCRIPTS -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/lightbox.js"></script>
@@ -223,18 +218,22 @@
 
 					$('ul.elastislide-list').each(function() {
 						var elem = $(this);
-						var name = elem.attr('data-image-set');
-						var count = elem.attr('data-image-count');
-						for (var i = 1; i <= count; i++) {
-							var title = lang[name + '_title_' + i];
-							if (!title) title = '';
-							elem.append([
-								'<li>',
-									'<a title="' + title + '" href="img/' + name + '/' + name + '-' + i + '.jpg" rel="lightbox[' + name + ']">',
-										'<img src="img/' + name + '/thumb/' + name + '-' + i + '.jpg">',
-									'</a>',
-								'</li>'
-							].join(''));
+						var sets = elem.attr('data-image-sets').split(/\s+/g);
+						var counts = elem.attr('data-image-counts').split(/\s+/g);
+						for (var i = 0; i < sets.length; i++) {
+							var name = sets[i];
+							var cnt = counts[i];
+							for (var j = 1; j <= cnt; j++) {
+								var title = lang[name + '_title_' + j];
+								if (!title) title = '';
+								elem.append([
+									'<li>',
+										'<a title="' + title + '" href="img/' + name + '/' + name + '-' + j + '.jpg" rel="lightbox[' + name + ']">',
+											'<img src="img/' + name + '/thumb/' + name + '-' + j + '.jpg">',
+										'</a>',
+									'</li>'
+								].join(''));
+							}
 						}
 						elem.elastislide();
 					});

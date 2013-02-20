@@ -129,6 +129,13 @@
 		<section id="contact">
 			<div class="container">
 				<h3><%= replace "contact" %></h3>
+				<address>
+					<strong><%= replace "sime" %></strong><br>
+					<%= replace "mail" %>: <a href="mailto:sime_23pr@yahoo.com">sime_23pr@yahoo.com</a><br>
+					<%= replace "phone" %>: +385 23 326177<br>
+					<%= replace "mobile" %>: +385 95 5445500<br>
+					<%= replace "fax" %>: +385 23 326177
+				</address>
 			</div>
 		</section>
 

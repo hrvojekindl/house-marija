@@ -9,6 +9,7 @@ body {
 	color: #555;
 	font-size: 16px;
 	line-height: 24px;
+	min-width: 240px;
 }
 
 section {
@@ -21,7 +22,7 @@ section h3 {
 
 address {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 24px;
 }
 
@@ -34,16 +35,14 @@ li {
 }
 
 .well-small {
-	border-radius: 6px;
+	border-radius: 5px;
+}
+
+.well-small ul.bullets {
 	margin-bottom: 0px;
 }
 
-.well-small ul {
-	padding-left: 2px;
-	margin-bottom: 0px;
-}
-
-.well-small span {
+.well-small span.bullets-title {
 	padding-left: 24px;
 }
 
@@ -54,6 +53,22 @@ li {
 	padding-top: 4px; 
 	padding-right: 8px; 
 	padding-left: 3px; 
+}
+
+/* CONTACT */
+
+.well-small address {
+	padding: 0px 8px;
+	margin-bottom: 0px;
+}
+
+address table {
+	table-layout: fixed;
+	overflow: hidden;
+}
+
+address table td:nth-child(2) {
+	padding-left: 8px;
 }
 
 /* CONTAINER */
@@ -77,7 +92,6 @@ li {
 .elastislide-wrapper {
 	min-height: 20px;
 	border-radius: 16px;
-	margin-top: 20px;
 	background-color: #FAFAFA;
 	background-image: linear-gradient(to bottom, #FAFAFA, #F2F2F2);
 }
@@ -90,6 +104,7 @@ li {
 #map_canvas {
 	height: 450px;
 	border-radius: 6px;
+	margin-bottom: 20px;
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
 }
 

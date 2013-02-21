@@ -88,8 +88,8 @@
 				<div class="row-fluid">
 					<p class="span8"><%= replace "about-text" %></p>
 					<div class="well well-small span4">
-						<span><%= replace "house-bullet-title" %></span>
-						<ul id="house-bullets">
+						<span class="bullets-title"><%= replace "house-bullet-title" %></span>
+						<ul class="bullets">
 							<li><%= replace "house-bullet1" %></li>
 							<li><%= replace "house-bullet2" %></li>
 							<li><%= replace "house-bullet3" %></li>
@@ -110,8 +110,8 @@
 				<div class="row-fluid">
 					<p class="span8"><%= replace "location-text" %></p>
 					<div class="well well-small span4">
-						<span><%= replace "location-bullet-title" %></span>
-						<ul id="location-bullets">
+						<span class="bullets-title"><%= replace "location-bullet-title" %></span>
+						<ul class="bullets">
 							<li><%= replace "location-bullet1" %></li>
 							<li><%= replace "location-bullet2" %></li>
 							<li><%= replace "location-bullet3" %></li>
@@ -129,13 +129,31 @@
 		<section id="contact">
 			<div class="container">
 				<h3><%= replace "contact" %></h3>
-				<address>
-					<strong><%= replace "sime" %></strong><br>
-					<%= replace "mail" %>: <a href="mailto:sime_23pr@yahoo.com">sime_23pr@yahoo.com</a><br>
-					<%= replace "phone" %>: +385 23 326177<br>
-					<%= replace "mobile" %>: +385 95 5445500<br>
-					<%= replace "fax" %>: +385 23 326177
-				</address>
+				<div class="row-fluid">
+					<div class="well well-small span5">
+						<address>
+							<strong><%= replace "sime" %></strong>
+							<table>
+								<tr>
+									<td><%= replace "mail" %>:</td>
+									<td><a href="mailto:sime_23pr@yahoo.com">sime_23pr@yahoo.com</a></td>
+								</tr>
+								<tr>
+									<td><%= replace "mobile" %>:</td>
+									<td>+385 95 5445500</td>
+								</tr>
+								<tr>
+									<td><%= replace "phone" %>:</td>
+									<td>+385 23 326177</td>
+								</tr>
+								<tr>
+									<td><%= replace "fax" %>:</td>
+									<td>+385 23 326177</td>
+								</tr>
+							</table>
+						</address>
+					</div>
+				</div>
 			</div>
 		</section>
 

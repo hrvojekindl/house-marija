@@ -260,7 +260,7 @@
 								].join(''));
 							}
 						}
-						elem.elastislide();
+						elem.elastislide({ minItems: 1 });
 					});
 
 				});

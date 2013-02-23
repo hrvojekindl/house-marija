@@ -88,6 +88,13 @@ address table td:nth-child(2) {
 	}
 }
 
+/* PRICING */
+
+#pricing table td,
+#pricing table th {
+	text-align: center;
+}
+
 /* CONTAINER */
 
 @media (max-width: 979px) {

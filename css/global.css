@@ -4,16 +4,17 @@ html, body {
 }
 
 body {
-	padding-top: 50px;
+	padding-top: 55px;
 	height: 10000px;
 	color: #555;
 	font-size: 16px;
 	line-height: 24px;
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 	body {
 		font-size: 14px;
 		line-height: 22px;
+		padding-top: 20px;
 	}
 }
 
@@ -22,7 +23,7 @@ section {
 }
 
 section h3 {
-	text-shadow: 0 1px 0 #FFFFFF;
+	text-shadow: 0px 1px 0 #FFFFFF;
 }
 
 address {
@@ -74,7 +75,7 @@ address table td:nth-child(2) {
 	padding-left: 8px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 300px) {
 	address {
 		font-size: 13px;
 		line-height: 22px;
@@ -98,7 +99,7 @@ address table td:nth-child(2) {
 
 @media (max-width: 767px) {
 	.container {
-		margin: 0 0px;
+		margin: 0px 0px;
 	}
 }
 
@@ -150,10 +151,10 @@ address table td:nth-child(2) {
 
 @media (max-width: 979px) {
 	.navbar .container {
-		padding: 0 20px;
+		padding: 0px 20px;
 	}
 	.navbar-inner {
-		margin: -20px 0;
+		margin: -20px 0px;
 	}
 	.navbar-fixed-top {
 		position: fixed;
@@ -175,16 +176,16 @@ address table td:nth-child(2) {
 }
 .carousel .container {
 	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
 }
 .carousel-control {
 	background-color: transparent;
 	border: 0px;
 	font-size: 120px;
 	margin-top: 0px;
-	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	text-shadow: 0px 1px 1px rgba(0,0,0,.4);
 	border-radius: 0px;
 	width: auto;
 	height: auto;
@@ -206,9 +207,9 @@ address table td:nth-child(2) {
 }
 .carousel-caption h1,
 .carousel-caption .lead {
-	margin: 0;
-	line-height: 1.25;
+	margin: 0px;
 	color: #fff;
+	line-height: 1.25em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 .carousel-caption .btn {
@@ -217,10 +218,9 @@ address table td:nth-child(2) {
 
 @media (max-width: 979px) {
 	.carousel {
-		margin: 0 -20px;
+		margin: 0px -20px;
 	}
 	.carousel-caption {
-		width: 65%;
 		padding: 0 80px;
 	}
 	.carousel img {
@@ -239,15 +239,17 @@ address table td:nth-child(2) {
 	.carousel img {
 		height: 350px;
 	}
-	.carousel-caption {
-		margin-bottom: 60px;
-		padding: 0 70px;
-	}
 	.carousel-caption h1 {
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.carousel-caption .lead,
 	.carousel-caption .btn {
-		font-size: 18px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 360px) {
+	.carousel {
+		display: none;
 	}
 }

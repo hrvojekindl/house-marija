@@ -97,16 +97,15 @@ address table td:nth-child(2) {
 
 .product-price {
 	position: relative;
-	font-size: 30px; 
+	font-size: 22px; 
 	font-weight: bold;
-	letter-spacing: -1px;
 	float: right;
 }
 .product-price small {
 	font-size: 12px;
 }
 .product-price em {
-	font-size: 18px;
+	font-size: 14px;
 	font-style: normal;
 	vertical-align: top;
 }

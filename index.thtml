@@ -100,7 +100,9 @@
 						</ul>
 					</div>
 				</div>
-				<ul class="elastislide-list" data-rel="gallery1" data-image-sets="house brbinj" data-image-counts="10 10"></ul>
+				<div class="row-fluid">
+					<ul class="elastislide-list" data-rel="gallery1" data-image-sets="house brbinj" data-image-counts="10 10"></ul>
+				</div>
 			</div>
 		</section>
 
@@ -121,8 +123,12 @@
 						</ul>
 					</div>
 				</div>
-				<div id="map_canvas"></div>
-				<ul class="elastislide-list" data-rel="gallery2" data-image-sets="island" data-image-counts="10"></ul>
+				<div class="row-fluid">
+					<div id="map_canvas"></div>
+				</div>
+				<div class="row-fluid">
+					<ul class="elastislide-list" data-rel="gallery2" data-image-sets="island" data-image-counts="10"></ul>
+				</div>
 			</div>
 		</section>
 

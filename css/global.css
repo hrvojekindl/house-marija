@@ -30,12 +30,16 @@ address {
 	font-size: 15px;
 }
 
+li {
+	line-height: 25px;
+}
+
 a:focus {
 	outline: none;
 }
 
-li {
-	line-height: 25px;
+.row-fluid p {
+	margin-bottom: 20px;
 }
 
 .well-small {

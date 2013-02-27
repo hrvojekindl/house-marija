@@ -226,7 +226,7 @@
 				(function($) {
 					$(function() {
 						var map = new google.maps.Map($('#map_canvas')[0], {
-							center: new google.maps.LatLng(44.000000, 15.086353),
+							center: new google.maps.LatLng(44.000000, 15.001209),
 							mapTypeId: google.maps.MapTypeId.ROADMAP,
 							scrollwheel: false,
 							zoom: 10

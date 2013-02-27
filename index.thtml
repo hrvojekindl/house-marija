@@ -148,11 +148,11 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>01.01. - 15.06.</td><td><span class="product-price"><em>&euro;</em>40</span></td><td>3</td></tr>
-								<tr><td>15.06. - 06.07.</td><td><span class="product-price"><em>&euro;</em>50</span></td><td>7</td></tr>
-								<tr><td>06.07. - 24.08.</td><td><span class="product-price"><em>&euro;</em>65</span></td><td>7</td></tr>
-								<tr><td>24.08. - 08.09.</td><td><span class="product-price"><em>&euro;</em>50</span></td><td>7</td></tr>
-								<tr><td>08.09. - 31.12.</td><td><span class="product-price"><em>&euro;</em>40</span></td><td>3</td></tr>
+								<tr><td>01.01. - 15.06.</td><td><span class="product-price"><em>&euro; </em>40</span></td><td>3</td></tr>
+								<tr><td>15.06. - 06.07.</td><td><span class="product-price"><em>&euro; </em>50</span></td><td>7</td></tr>
+								<tr><td>06.07. - 24.08.</td><td><span class="product-price"><em>&euro; </em>65</span></td><td>7</td></tr>
+								<tr><td>24.08. - 08.09.</td><td><span class="product-price"><em>&euro; </em>50</span></td><td>7</td></tr>
+								<tr><td>08.09. - 31.12.</td><td><span class="product-price"><em>&euro; </em>40</span></td><td>3</td></tr>
 							</tbody>
 						</table>
 					</div>
@@ -167,17 +167,33 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>01.01. - 15.06.</td><td><span class="product-price"><em>&euro;</em>45</span></td><td>3</td></tr>
-								<tr><td>15.06. - 06.07.</td><td><span class="product-price"><em>&euro;</em>60</span></td><td>7</td></tr>
-								<tr><td>06.07. - 24.08.</td><td><span class="product-price"><em>&euro;</em>75</span></td><td>7</td></tr>
-								<tr><td>24.08. - 08.09.</td><td><span class="product-price"><em>&euro;</em>60</span></td><td>7</td></tr>
-								<tr><td>08.09. - 31.12.</td><td><span class="product-price"><em>&euro;</em>45</span></td><td>3</td></tr>
+								<tr><td>01.01. - 15.06.</td><td><span class="product-price"><em>&euro; </em>45</span></td><td>3</td></tr>
+								<tr><td>15.06. - 06.07.</td><td><span class="product-price"><em>&euro; </em>60</span></td><td>7</td></tr>
+								<tr><td>06.07. - 24.08.</td><td><span class="product-price"><em>&euro; </em>75</span></td><td>7</td></tr>
+								<tr><td>24.08. - 08.09.</td><td><span class="product-price"><em>&euro; </em>60</span></td><td>7</td></tr>
+								<tr><td>08.09. - 31.12.</td><td><span class="product-price"><em>&euro; </em>45</span></td><td>3</td></tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
 				<div class="row-fluid">
-					<p><%= replace "conditions" %></p>
+					<p class="span8"><%= replace "conditions" %></p>
+					<div class="span4">
+						<table class="table">
+							<caption><strong><%= replace "tax" %></strong></caption>
+							<thead>
+								<tr>
+									<th><%= replace "age" %></th>
+									<th><%= replace "price" %></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>&lt; 12</td><td><span class="product-price"><em><small>HRK </small></em>0</span></td></tr>
+								<tr><td>12 - 18</td><td><span class="product-price"><em><small>HRK </small></em>2.5</span></td></tr>
+								<tr><td>&gt; 18</td><td><span class="product-price"><em><small>HRK </small></em>5</span></td></tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</section>

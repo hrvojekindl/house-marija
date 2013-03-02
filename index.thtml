@@ -177,23 +177,7 @@
 					</div>
 				</div>
 				<div class="row-fluid">
-					<p class="span8"><%= replace "conditions" %></p>
-					<div class="span4">
-						<table class="table">
-							<caption><strong><%= replace "tax" %></strong></caption>
-							<thead>
-								<tr>
-									<th><%= replace "age" %></th>
-									<th><%= replace "price" %></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td>&lt; 12</td><td><span class="product-price"><em><small>HRK </small></em>0</span></td></tr>
-								<tr><td>12 - 18</td><td><span class="product-price"><em><small>HRK </small></em>2.5</span></td></tr>
-								<tr><td>&gt; 18</td><td><span class="product-price"><em><small>HRK </small></em>5</span></td></tr>
-							</tbody>
-						</table>
-					</div>
+					<p><%= replace "conditions" %></p>
 				</div>
 			</div>
 		</section>

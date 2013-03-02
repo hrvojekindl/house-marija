@@ -97,6 +97,7 @@
 							<li><%= replace "house-bullet4" %></li>
 							<li><%= replace "house-bullet5" %></li>
 							<li><%= replace "house-bullet6" %></li>
+							<li><%= replace "house-bullet7" %></li>
 						</ul>
 					</div>
 				</div>
@@ -115,6 +116,7 @@
 					<div class="well well-small span4">
 						<span class="bullets-title"><%= replace "location-bullet-title" %></span>
 						<ul class="bullets">
+							<li><%= replace "location-bullet0" %></li>
 							<li><%= replace "location-bullet1" %></li>
 							<li><%= replace "location-bullet2" %></li>
 							<li><%= replace "location-bullet3" %></li>

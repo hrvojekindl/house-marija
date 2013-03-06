@@ -199,15 +199,15 @@
 								</tr>
 								<tr>
 									<td><%= replace "mobile" %>:</td>
-									<td>+385 95 5445500</td>
+									<td>+385 95 544 55 00</td>
 								</tr>
 								<tr>
 									<td><%= replace "phone" %>:</td>
-									<td>+385 23 326177</td>
+									<td>+385 23 326 177</td>
 								</tr>
 								<tr>
 									<td><%= replace "fax" %>:</td>
-									<td>+385 23 326177</td>
+									<td>+385 23 326 177</td>
 								</tr>
 							</table>
 						</address>

@@ -52,7 +52,6 @@
 							<div class="carousel-caption">
 								<h1><%= replace "head1" %></h1>
 								<p class="lead"><%= replace "lead1" %></p>
-								<!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
 							</div>
 						</div>
 					</div>
@@ -62,7 +61,6 @@
 							<div class="carousel-caption">
 								<h1><%= replace "head2" %></h1>
 								<p class="lead"><%= replace "lead2" %></p>
-								<!--<a class="btn btn-large btn-primary" href="#">Learn more</a>-->
 							</div>
 						</div>
 					</div>
@@ -72,7 +70,6 @@
 							<div class="carousel-caption">
 								<h1><%= replace "head3" %></h1>
 								<p class="lead"><%= replace "lead3" %></p>
-								<!--<a class="btn btn-large btn-primary" href="#">Browse gallery</a>-->
 							</div>
 						</div>
 					</div>

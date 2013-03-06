@@ -5,5 +5,6 @@ window.lang = {
 	telascica_nature_park: 'Telašćica Nature Park',
 	kornati_national_park: 'Kornati National Park',
 	lightbox_label_image: 'Image',
-	lightbox_label_of: 'of'
+	lightbox_label_of: 'of',
+	house_title_1: 'Naslov1'
 };

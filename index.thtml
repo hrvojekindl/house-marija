@@ -126,7 +126,7 @@
 					<div id="map_canvas"></div>
 				</div>
 				<div class="row-fluid">
-					<ul class="elastislide-list" data-rel="location" data-image-set="location" data-image-count="10"></ul>
+					<ul class="elastislide-list" data-rel="location" data-image-set="location" data-image-count="9"></ul>
 				</div>
 			</div>
 		</section>

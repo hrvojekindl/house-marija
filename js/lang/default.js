@@ -24,6 +24,17 @@ window.lang = {
 	about_title_11: 'pine tree shade',
 	about_title_12: 'view from the dock',
 	about_title_13: 'sea & pine forrest',
-	about_title_14: 'visit us :)'
+	about_title_14: 'visit us :)',
+
+	// location image titles
+	location_title_1: 'Nature Park Telašćica',
+	location_title_2: 'Sakarun beach aerial view',
+	location_title_3: 'Sakarun beach sand',
+	location_title_4: 'lighthouse Veli Rat',
+	location_title_5: 'Sakarun beach area',
+	location_title_6: 'sunset on Telašćica',
+	location_title_7: 'cliffs of Telašćica',
+	location_title_8: 'north-east of Dugi Otok',
+	location_title_9: 'coves of Brbinj'
 
 };

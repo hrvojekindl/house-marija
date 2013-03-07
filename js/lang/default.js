@@ -7,9 +7,23 @@ window.lang = {
 	kornati_national_park: 'Kornati National Park',
 	
 	// lightbox
-	lightbox_label_image: 'Image',
+	lightbox_label_image: 'image',
 	lightbox_label_of: 'of',
 	
-	// image titles
-	about_title_1: 'View from the terrace'
+	// about image titles
+	about_title_1: 'from the terrace',
+	about_title_2: 'through the terrace door',
+	about_title_3: 'one double room',
+	about_title_4: 'the kitchen',
+	about_title_5: 'cove Jaz',
+	about_title_6: 'crystal clear sea',
+	about_title_7: 'in front of the house',
+	about_title_8: 'beautiful flora',
+	about_title_9: 'House Marija',
+	about_title_10: 'the beach',
+	about_title_11: 'pine tree shade',
+	about_title_12: 'view from the dock',
+	about_title_13: 'sea & pine forrest',
+	about_title_14: 'visit us :)'
+
 };

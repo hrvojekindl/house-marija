@@ -60,6 +60,11 @@ a:focus {
 	padding-left: 24px;
 }
 
+.carousel-indicators {
+	cursor: pointer;
+}
+
+
 .firstcharacter { 
 	float: left; 
 	font-size: 75px; 

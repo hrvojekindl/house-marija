@@ -5,6 +5,7 @@ window.lang = {
 	veli_rat_lighthouse: 'Veli Rat lighthouse',
 	telascica_nature_park: 'Telašćica Nature Park',
 	kornati_national_park: 'Kornati National Park',
+	map_icons_by: 'map icons by:',
 	
 	// lightbox
 	lightbox_label_image: 'image',

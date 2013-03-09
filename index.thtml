@@ -286,7 +286,7 @@
 												'<div>' + mopt.title + '</div>',
 												'<div style="float:right;width:88px;">',
 													'<span style="font-size:14px;line-height:14px;">' + lang.map_icons_by + '</span>',
-													'<a href="http://mapicons.nicolasmollet.com">',
+													'<a href="http://mapicons.nicolasmollet.com" target="_blank">',
 														'<img width="88" height="31" src="img/map/miclogo.gif" alt="">',
 													'</a>',
 												'</div>',
@@ -298,6 +298,12 @@
 								});
 							})(mopt, marker);
 						}
+						google.maps.event.addListener(map, 'click', function() {
+							if (infowindow) {
+								infowindow.close();
+								infowindow = null;
+							}
+						});
 					});
 				})(jQuery);
 			}

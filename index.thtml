@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title><%= replace "house" %> Marija</title>
 		<link href="css/global.css" rel="stylesheet" media="screen">
-		<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src=<%= replace "language-js-src" %>></script>
 	</head>
 	<body onload="init_gmap()" data-spy="scroll" data-target=".navbar">

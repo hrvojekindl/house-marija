@@ -269,8 +269,11 @@
 							var mopt = markers[i];
 							var marker = new google.maps.Marker({
 								position: new google.maps.LatLng(mopt.pos[0], mopt.pos[1]),
-								icon: new google.maps.MarkerImage(mopt.img,
-									new google.maps.Size(32, 37)),
+								icon: new google.maps.MarkerImage(mopt.img, new google.maps.Size(32, 37)),
+								shadow: {
+									url: 'img/map/shadow.png',
+									size: new google.maps.Size(51, 37)
+								},
 								title: mopt.title,
 								map: map
 							});

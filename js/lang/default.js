@@ -24,7 +24,7 @@ window.lang = {
 	about_title_10: 'the beach',
 	about_title_11: 'pine tree shade',
 	about_title_12: 'view from the dock',
-	about_title_13: 'sea & pine forrest',
+	about_title_13: 'sea & pine forest',
 	about_title_14: 'visit us :)',
 
 	// location image titles

@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-	padding-top: 55px;
+	padding-top: 56px;
 	height: 3500px;
 	color: #555;
 	font-size: 16px;
@@ -13,7 +13,7 @@ body {
 }
 @media (max-width: 979px) {
 	body {
-		padding-top: 45px;
+		padding-top: 46px;
 	}
 }
 @media (max-width: 360px) {
@@ -163,6 +163,9 @@ address table td:nth-child(2) {
 
 /* NAVBAR */
 
+.navbar-inner {
+	min-height: 45px;
+}
 .navbar .brand {
 	font-size: 18px;
 	font-weight: bold;
@@ -179,7 +182,7 @@ address table td:nth-child(2) {
 }
 .navbar .btn, 
 .navbar .btn-group {
-	margin-top: 7px;
+	margin-top: 8px;
 }
 .navbar .nav > li a.en { background-image: url("../img/flags/en.png") }
 .navbar .nav > li a.de { background-image: url("../img/flags/de.png") }

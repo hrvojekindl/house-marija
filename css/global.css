@@ -8,17 +8,12 @@ html, body {
 }
 
 body {
-	padding-top: 56px;
+	padding-top: 55px;
 	height: 3500px;
 	color: #555;
 	font-size: 16px;
 	line-height: 24px;
 	min-width: 240px;
-}
-@media (max-width: 979px) {
-	body {
-		padding-top: 46px;
-	}
 }
 @media (max-width: 360px) {
 	body {
@@ -28,6 +23,11 @@ body {
 
 section {
 	padding-top: 40px;
+}
+@media (max-width: 979px) {
+	section {
+		padding-top: 50px;
+	}
 }
 
 section h3 {
@@ -200,7 +200,7 @@ address table td:nth-child(2) {
 
 @media (max-width: 979px) {
 	.navbar .container {
-		padding: 0px;
+		padding: 5px 0px;
 		margin: 0px;
 	}
 	.navbar-inner {

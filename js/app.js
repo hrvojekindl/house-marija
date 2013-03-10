@@ -27,7 +27,7 @@ require(
 	'elastislide'
 ],
 function($) {
-	$(function() {
+	$(document).ready(function() {
 		// init navigation
 		var navbar = $('.navbar');
 		var brand = navbar.find('a.brand');
@@ -60,8 +60,10 @@ function($) {
 			}
 			elem.elastislide({ minItems: 1 });
 		});
+	});
 
-		// init google map
+	// init google map
+	$(window).load(function() {
 		var map = new google.maps.Map($('#map_canvas')[0], {
 			center: new google.maps.LatLng(44.000000, 15.001209),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,

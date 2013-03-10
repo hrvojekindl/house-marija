@@ -118,7 +118,7 @@ function($) {
 							'<div>',
 								'<div>' + mopt.title + '</div>',
 								'<div style="float:right;width:88px;">',
-									'<span style="font-size:14px;line-height:14px;">' + lang.map_icons_by + '</span>',
+									'<span style="font-family:Arial;font-size:14px;line-height:14px;">' + lang.map_icons_by + '</span>',
 									'<a href="http://mapicons.nicolasmollet.com" target="_blank">',
 										'<img width="88" height="31" src="img/map/miclogo.gif" alt="">',
 									'</a>',

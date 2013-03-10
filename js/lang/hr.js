@@ -8,8 +8,8 @@ window.lang = {
 	map_icons_by: 'map icons by:',
 	
 	// lightbox
-	lightbox_label_image: 'image',
-	lightbox_label_of: 'of',
+	lightbox_label_image: 'slika',
+	lightbox_label_of: 'od',
 	
 	// about image titles
 	about_title_1: 'from the terrace',

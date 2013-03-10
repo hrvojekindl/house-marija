@@ -1,10 +1,10 @@
 window.lang = {
 	// markers
 	house_marija: 'Kuća Marija',
-	sakarun_beach: 'plaža Sakarun',
-	veli_rat_lighthouse: 'Veli Rat lighthouse',
-	telascica_nature_park: 'Telašćica Nature Park',
-	kornati_national_park: 'Kornati National Park',
+	sakarun_beach: 'Plaža Sakarun',
+	veli_rat_lighthouse: 'Svjetionik Veli Rat',
+	telascica_nature_park: 'Park prirode Telašćica',
+	kornati_national_park: 'Nacionalni park Kornati',
 	map_icons_by: 'map icons by:',
 	
 	// lightbox

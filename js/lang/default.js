@@ -1,7 +1,7 @@
 window.lang = {
 	// markers
 	house_marija: 'House Marija',
-	saharun_beach: 'Saharun beach',
+	sakarun_beach: 'Sakarun beach',
 	veli_rat_lighthouse: 'Veli Rat lighthouse',
 	telascica_nature_park: 'Telašćica Nature Park',
 	kornati_national_park: 'Kornati National Park',

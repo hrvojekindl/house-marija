@@ -78,7 +78,7 @@ function($) {
 			},
 			{
 				pos: [44.133685, 14.871704],
-				title: lang.saharun_beach,
+				title: lang.sakarun_beach,
 				img: 'img/map/palm-tree.png'
 			},
 			{

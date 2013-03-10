@@ -1,2 +1,4 @@
 build/
-img-original/
+js/app.built.js
+css/style.built.css
+*.sublime-workspace

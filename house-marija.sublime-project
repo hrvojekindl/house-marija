@@ -11,6 +11,7 @@
 			"shell": true,
 			"name": "house-marija",
 			"cmd": ["node", "r.js", "-o", "build-js.conf.js", "&", "node", "r.js", "-o", "build-css.conf.js", "&", "rake", "build", "--trace"]
+			//"working_dir ": "${project_path}"
 		}
 	]
 }

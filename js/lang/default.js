@@ -37,5 +37,4 @@ window.lang = {
 	location_title_7: 'cliffs of Telašćica',
 	location_title_8: 'north-east of Dugi Otok',
 	location_title_9: 'coves of Brbinj'
-
 };

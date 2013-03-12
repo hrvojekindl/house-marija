@@ -98,6 +98,8 @@ function($) {
 			}
 		];
 		var infowindow = null;
+		var map_icons_img = $('<img width="88" height="31" src="img/map/miclogo.gif" alt="">')
+			.hide().appendTo(document.body);
 		for (var i = 0; i < markers.length; i++) {
 			var mopt = markers[i];
 			var marker = new google.maps.Marker({
@@ -113,20 +115,20 @@ function($) {
 			(function(mopt, marker) {
 				google.maps.event.addListener(marker, 'click', function() {
 					if (infowindow) infowindow.close();
+					var content = $([
+						'<div style="height:85px">',
+							'<div>' + mopt.title + '</div>',
+							'<div style="position:absolute;width:88px;right:0px;bottom:0px;text-align:center;">',
+								'<span style="font-family:Arial;font-size:12px;line-height:12px;">',
+									lang.map_icons_by,
+								'</span>',
+								'<a href="http://mapicons.nicolasmollet.com" target="_blank"></a>',
+							'</div>',
+						'</div>'
+					].join(''));
+					map_icons_img.appendTo(content.find('a')).show();
 					infowindow = new google.maps.InfoWindow({
-						content: $([
-							'<div style="height:90px">',
-								'<div>' + mopt.title + '</div>',
-								'<div style="position:absolute;width:88px;right:0px;bottom:0px;text-align:center;">',
-									'<span style="font-family:Arial;font-size:12px;line-height:12px;">',
-										lang.map_icons_by,
-									'</span>',
-									'<a href="http://mapicons.nicolasmollet.com" target="_blank">',
-										'<img width="88" height="31" src="img/map/miclogo.gif" alt="">',
-									'</a>',
-								'</div>',
-							'</div>'
-						].join(''))[0],
+						content: content[0],
 						position: marker.getPosition()
 					});
 					infowindow.open(map);

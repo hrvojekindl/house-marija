@@ -5,7 +5,7 @@ window.lang = {
 	veli_rat_lighthouse: 'Svjetionik Veli Rat',
 	telascica_nature_park: 'Park prirode Telašćica',
 	kornati_national_park: 'Nacionalni park Kornati',
-	map_icons_by: 'map icons by:',
+	map_icons_by: 'Ikone na karti:',
 	
 	// lightbox
 	lightbox_label_image: 'slika',

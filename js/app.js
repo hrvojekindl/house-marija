@@ -115,10 +115,12 @@ function($) {
 					if (infowindow) infowindow.close();
 					infowindow = new google.maps.InfoWindow({
 						content: $([
-							'<div>',
+							'<div style="height:90px">',
 								'<div>' + mopt.title + '</div>',
-								'<div style="float:right;width:88px;">',
-									'<span style="font-family:Arial;font-size:14px;line-height:14px;">' + lang.map_icons_by + '</span>',
+								'<div style="position:absolute;width:88px;right:0px;bottom:0px;text-align:center;">',
+									'<span style="font-family:Arial;font-size:12px;line-height:12px;">',
+										lang.map_icons_by,
+									'</span>',
 									'<a href="http://mapicons.nicolasmollet.com" target="_blank">',
 										'<img width="88" height="31" src="img/map/miclogo.gif" alt="">',
 									'</a>',

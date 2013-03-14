@@ -75,7 +75,8 @@ a:focus {
 	line-height: 60px; 
 	padding-top: 4px; 
 	padding-right: 8px; 
-	padding-left: 3px; 
+	padding-left: 3px;
+	text-shadow: 0px 1px 0 #fff;
 }
 
 /* CONTACT */
@@ -178,6 +179,7 @@ address table td:nth-child(2) {
 .navbar .brand {
 	font-size: 18px;
 	font-weight: bold;
+	text-shadow: 0px 1px 0 #fff;
 	padding: 10px 10px 10px 0px;
 	margin: 0px;
 }

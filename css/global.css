@@ -115,6 +115,8 @@ address table td:nth-child(2) {
 #pricing table td,
 #pricing table th {
 	text-align: center;
+	font-size: 15px;
+	padding: 8px 4px;
 }
 
 .product-price {

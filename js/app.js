@@ -98,7 +98,7 @@ function($) {
 			}
 		];
 		var infowindow = null;
-		var map_icons_img = $('<img width="88" height="31" src="img/map/miclogo.gif" alt="">')
+		var map_icons_img = $('<img width="88" height="31" src="img/map/miclogo.png" alt="">')
 			.hide().appendTo(document.body);
 		for (var i = 0; i < markers.length; i++) {
 			var mopt = markers[i];

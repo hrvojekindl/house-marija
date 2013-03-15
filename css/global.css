@@ -176,6 +176,13 @@ address table td:nth-child(2) {
 
 /* NAVBAR */
 
+.collapse.short-transition {
+	-webkit-transition: height 0.15s;
+	-moz-transition: height 0.15s;
+	-ms-transition: height 0.15s;
+	-o-transition: height 0.15s;
+	transition: height 0.15s;
+}
 .navbar-inner {
 	min-height: 45px;
 }

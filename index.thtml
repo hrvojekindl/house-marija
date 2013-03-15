@@ -18,7 +18,7 @@
 						<span class="icon-bar"></span>
 					</a>
 					<a class="brand" href="#"><%= replace "house" %> Marija</a>
-					<div class="nav-collapse collapse">
+					<div class="nav-collapse collapse short-transition">
 						<ul class="nav">
 							<li><a href="#about"><%= replace "about" %></a></li>
 							<li><a href="#location"><%= replace "location" %></a></li>

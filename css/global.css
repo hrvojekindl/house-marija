@@ -54,6 +54,7 @@ a:focus {
 
 .well-small {
 	border-radius: 5px;
+	padding-right: 16px
 }
 
 .well-small ul.bullets {

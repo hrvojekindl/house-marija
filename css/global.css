@@ -161,7 +161,7 @@ address table td:nth-child(2) {
 
 /* GOOGLE MAP */
 
-#map_canvas {
+.google-map {
 	height: 450px;
 	border-radius: 6px;
 	margin-bottom: 20px;
@@ -169,7 +169,7 @@ address table td:nth-child(2) {
 }
 
 @media (max-width: 979px) {
-	#map_canvas {
+	.google-map {
 		height: 400px;
 	}
 }

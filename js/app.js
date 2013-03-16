@@ -64,7 +64,7 @@ function($) {
 
 	// init google map
 	$(window).load(function() {
-		var map_elem = $('#map-canvas').addClass('.google-map')[0];
+		var map_elem = $('#map-canvas').addClass('google-map')[0];
 		var map = new google.maps.Map(map_elem, {
 			center: new google.maps.LatLng(44.000000, 15.001209),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,

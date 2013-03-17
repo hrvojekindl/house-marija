@@ -36,7 +36,7 @@
 
 		<!-- CAROUSEL -->
 		<div class="container">
-			<div id="carousel" class="carousel slide" data-interval="false">
+			<div id="carousel" class="carousel slide">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel" data-slide-to="1"></li>

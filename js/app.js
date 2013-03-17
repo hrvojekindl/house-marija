@@ -52,6 +52,10 @@ function($) {
 			navbar.find('div.nav-collapse.in.collapse').collapse('hide');
 		});
 
+		// init carousel
+		$('#carousel').carousel({ interval: 8000 });
+		$('.carousel-control').show();
+
 		// init image galleries
 		$('ul.elastislide-list').each(function() {
 			var elem = $(this);

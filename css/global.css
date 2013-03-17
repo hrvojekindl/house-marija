@@ -259,6 +259,7 @@ address table td:nth-child(2) {
 	border-radius: 0px;
 	width: auto;
 	height: auto;
+	display: none;
 }
 .carousel .item {
 	height: 400px;

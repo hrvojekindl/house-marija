@@ -161,6 +161,10 @@ address table td:nth-child(2) {
 
 /* GOOGLE MAP */
 
+#map-canvas img {
+	max-width: inherit;
+}
+
 .google-map {
 	height: 450px;
 	border-radius: 6px;

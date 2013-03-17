@@ -28,6 +28,17 @@ require(
 ],
 function($) {
 	$(document).ready(function() {
+		// write email
+		(function() {
+			var t = '';
+			var m = 'r @my<l=c.h_s>o2iep"f3:\/at';
+			var i = '5H1:0AD7C3H@6I>F<@3A;?EB024H:>>98>3C=<@3A;?EB024H:>>98>35GH=';
+			for (var j = 0; j < i.length; j++) {
+				t += m.charAt(i.charCodeAt(j) - 48);
+			}
+			$('#contact td.email').html(t);
+		})();
+
 		// init navigation
 		var navbar = $('.navbar');
 		var brand = navbar.find('a.brand');
@@ -64,8 +75,8 @@ function($) {
 
 	// init google map
 	$(window).load(function() {
-		var map_elem = $('#map-canvas').addClass('google-map')[0];
-		var map = new google.maps.Map(map_elem, {
+		var map_elem = $('#map-canvas').addClass('google-map');
+		var map = new google.maps.Map(map_elem[0], {
 			center: new google.maps.LatLng(44.000000, 15.001209),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,

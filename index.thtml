@@ -71,10 +71,8 @@
 						</div>
 					</div>
 				</div>
-				<script type="text/javascript">
-					document.write('<a class="left carousel-control" href="#carousel" data-slide="prev">&lsaquo;<\/a>');
-					document.write('<a class="right carousel-control" href="#carousel" data-slide="next">&rsaquo;<\/a>');
-				</script>
+				<a class="left carousel-control" href="#carousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#carousel" data-slide="next">&rsaquo;</a>
 			</div>
 		</div>
 
@@ -192,21 +190,8 @@
 							<strong><%= replace "sime" %></strong>
 							<table>
 								<tr>
-									<td><%= replace "mail" %>:</td>
-									<td>
-										<script type="text/javascript">
-											(function() {
-												var t = '';
-												var m = '=ay_hfr< @slm>c2.tio:pe"\/3';
-												var i = '71846F50G<1B;ACD:B<F3?IE69214CC@>C<G=:B<F3?IE69214CC@>C<7H1=';
-												for (j = 0; j < i.length; j++) {
-													t += m.charAt(i.charCodeAt(j) - 48);
-												}
-												document.write(t);
-											})();
-										</script>
-										<noscript><%= replace "enable-js" %></noscript>
-									</td>
+									<td><%= replace "email" %>:</td>
+									<td class="email"><%= replace "enable-js" %></td>
 								</tr>
 								<tr>
 									<td><%= replace "mobile" %>:</td>

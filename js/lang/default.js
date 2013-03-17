@@ -20,7 +20,7 @@ window.lang = {
 	about_title_6: 'crystal clear sea',
 	about_title_7: 'in front of the house',
 	about_title_8: 'beautiful flora',
-	about_title_9: 'House Marija',
+	about_title_9: 'house Marija',
 	about_title_10: 'the beach',
 	about_title_11: 'pine tree shade',
 	about_title_12: 'view from the dock',
@@ -35,6 +35,6 @@ window.lang = {
 	location_title_5: 'Sakarun beach area',
 	location_title_6: 'sunset on Telašćica',
 	location_title_7: 'cliffs of Telašćica',
-	location_title_8: 'north-east of Dugi Otok',
+	location_title_8: 'north-east of Dugi otok',
 	location_title_9: 'coves of Brbinj'
 };

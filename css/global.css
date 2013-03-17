@@ -160,22 +160,16 @@ address table td:nth-child(2) {
 }
 
 /* GOOGLE MAP */
-
+#map-canvas {
+	height: 450px;
+	margin-bottom: 20px;
+}
 #map-canvas img {
 	max-width: inherit;
 }
-
 .google-map {
-	height: 450px;
 	border-radius: 6px;
-	margin-bottom: 20px;
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-}
-
-@media (max-width: 979px) {
-	.google-map {
-		height: 400px;
-	}
 }
 
 /* NAVBAR */

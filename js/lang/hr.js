@@ -25,7 +25,6 @@ window.lang = {
 	about_title_11: 'hladovina borove šume',
 	about_title_12: 'kristalno čisto more',
 	about_title_13: 'prekrasna flora',
-	about_title_14: 'posjetite nas :)',
 
 	// location image titles
 	location_title_1: 'Park prirode Telašćica',

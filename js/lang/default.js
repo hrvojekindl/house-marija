@@ -25,7 +25,6 @@ window.lang = {
 	about_title_11: 'pine tree shade',
 	about_title_12: 'crystal clear sea',
 	about_title_13: 'beautiful flora',
-	about_title_14: 'visit us :)',
 
 	// location image titles
 	location_title_1: 'Nature Park Telašćica',

@@ -31,8 +31,8 @@ function($) {
 		// write email
 		(function() {
 			var t = '';
-			var m = 'sam /fuie:=.j"l@r<cotyh>';
-			var i = 'A13F@85:=217>DC9FC60821@7<1?E1FCC;BC2=GFC60821@7<1?E1FCC;BC2A41G';
+			var m = 'r @my<l=c.h_s>o2iep"f3:\/at';
+			var i = '5H1:0AD7C3H@6I>F<@3A;?EB024H:>>98>3C=<@3A;?EB024H:>>98>35GH=';
 			for (var j = 0; j < i.length; j++) {
 				t += m.charAt(i.charCodeAt(j) - 48);
 			}

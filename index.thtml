@@ -146,11 +146,13 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>01.01 - 29.06</td><td><span class="product-price"><em>&euro; </em>40</span></td><td>3</td></tr>
-								<tr><td>29.06 - 13.07</td><td><span class="product-price"><em>&euro; </em>50</span></td><td>7</td></tr>
+								<tr><td>01.01 - 01.06</td><td><span class="product-price"><em>&euro; </em>40</span></td><td>3</td></tr>
+								<tr><td>01.06 - 29.06</td><td><span class="product-price"><em>&euro; </em>50</span></td><td>3</td></tr>
+								<tr><td>29.06 - 13.07</td><td><span class="product-price"><em>&euro; </em>60</span></td><td>7</td></tr>
 								<tr><td>13.07 - 24.08</td><td><span class="product-price"><em>&euro; </em>65</span></td><td>7</td></tr>
-								<tr><td>24.08 - 01.09</td><td><span class="product-price"><em>&euro; </em>50</span></td><td>7</td></tr>
-								<tr><td>01.09 - 31.12</td><td><span class="product-price"><em>&euro; </em>40</span></td><td>3</td></tr>
+								<tr><td>24.08 - 01.09</td><td><span class="product-price"><em>&euro; </em>60</span></td><td>7</td></tr>
+								<tr><td>01.09 - 01.10</td><td><span class="product-price"><em>&euro; </em>50</span></td><td>3</td></tr>
+								<tr><td>01.10 - 31.12</td><td><span class="product-price"><em>&euro; </em>40</span></td><td>3</td></tr>
 							</tbody>
 						</table>
 					</div>
@@ -165,11 +167,13 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>01.01 - 29.06</td><td><span class="product-price"><em>&euro; </em>45</span></td><td>3</td></tr>
-								<tr><td>29.06 - 13.07</td><td><span class="product-price"><em>&euro; </em>60</span></td><td>7</td></tr>
+								<tr><td>01.01 - 01.06</td><td><span class="product-price"><em>&euro; </em>45</span></td><td>3</td></tr>
+								<tr><td>01.06 - 29.06</td><td><span class="product-price"><em>&euro; </em>55</span></td><td>3</td></tr>
+								<tr><td>29.06 - 13.07</td><td><span class="product-price"><em>&euro; </em>70</span></td><td>7</td></tr>
 								<tr><td>13.07 - 24.08</td><td><span class="product-price"><em>&euro; </em>75</span></td><td>7</td></tr>
-								<tr><td>24.08 - 01.09</td><td><span class="product-price"><em>&euro; </em>60</span></td><td>7</td></tr>
-								<tr><td>01.09 - 31.12</td><td><span class="product-price"><em>&euro; </em>45</span></td><td>3</td></tr>
+								<tr><td>24.08 - 01.09</td><td><span class="product-price"><em>&euro; </em>70</span></td><td>7</td></tr>
+								<tr><td>01.09 - 01.10</td><td><span class="product-price"><em>&euro; </em>55</span></td><td>3</td></tr>
+								<tr><td>01.10 - 31.12</td><td><span class="product-price"><em>&euro; </em>45</span></td><td>3</td></tr>
 							</tbody>
 						</table>
 					</div>

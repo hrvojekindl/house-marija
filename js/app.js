@@ -132,7 +132,7 @@ function($) {
 				google.maps.event.addListener(marker, 'click', function() {
 					if (infowindow) infowindow.close();
 					var content = $([
-						'<div style="height:85px">',
+						'<div style="height:85px;min-width:100px;">',
 							'<div>' + mopt.title + '</div>',
 							'<div style="position:absolute;width:88px;right:0px;bottom:0px;text-align:center;">',
 								'<span style="font-family:Arial;font-size:12px;line-height:12px;">',

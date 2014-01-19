@@ -195,7 +195,7 @@ address table td:nth-child(2) {
 }
 .navbar .nav > li a.lang {
 	padding-left: 20px;
-	background-position: 0px 15px;
+	background-position: 0px 17px;
 	background-repeat: no-repeat;
 }
 .navbar .btn, 
@@ -272,7 +272,7 @@ address table td:nth-child(2) {
 	margin: 0px;
 	color: #fff;
 	line-height: 1.25em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	text-shadow: 0 1px 1px rgba(0,0,0,.6);
 }
 .carousel-caption .btn {
 	margin-top: 10px;
@@ -310,7 +310,7 @@ address table td:nth-child(2) {
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 499px) {
 	.carousel {
 		display: none;
 	}

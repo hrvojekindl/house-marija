@@ -69,7 +69,6 @@ a:focus {
 	cursor: pointer;
 }
 
-
 .firstcharacter { 
 	float: left; 
 	font-size: 75px; 
@@ -240,9 +239,9 @@ address table td:nth-child(2) {
 }
 .carousel .container {
 	position: absolute;
-	right: 0px;
+	top: 0px;
 	bottom: 0px;
-	left: 0px;
+	padding: 100px 0px;
 }
 .carousel-control {
 	background-color: transparent;
@@ -264,11 +263,9 @@ address table td:nth-child(2) {
 	border-radius: 6px;
 }
 .carousel-caption {
-	background-color: transparent;
 	position: static;
-	max-width: 550px;
-	padding: 0 100px;
-	margin-bottom: 150px;
+	padding: 0 150px;
+	background-color: transparent;
 }
 .carousel-caption h1,
 .carousel-caption .lead {

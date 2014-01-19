@@ -27,6 +27,8 @@
 						</ul>
 						<ul class="nav pull-right">
 							<li><a title="en" class="lang en" href="/" style=<%= replace "text-decoration-en" %>>en</a></li>
+							<li><a title="de" class="lang de" href="/de/" style=<%= replace "text-decoration-de" %>>de</a></li>
+							<li><a title="it" class="lang it" href="/it/" style=<%= replace "text-decoration-it" %>>it</a></li>
 							<li><a title="hr" class="lang hr" href="/hr/" style=<%= replace "text-decoration-hr" %>>hr</a></li>
 						</ul>
 					</div>

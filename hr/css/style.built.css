@@ -3820,6 +3820,13 @@ address table td:nth-child(2) {
 	font-style: normal;
 	vertical-align: top;
 }
+.product-price strike {
+	color: darkgrey;
+	font-size: 17px;
+}
+.product-price strike em {
+	font-size: 10px;
+}
 @media (max-width: 979px) {
 	.container {
 		width: auto;

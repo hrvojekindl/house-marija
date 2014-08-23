@@ -205,7 +205,16 @@
 								<tr><td>28.06 - 12.07</td><td><span class="product-price"><em>&euro;&nbsp;</em>60</span></td><td>7</td></tr>
 								<tr><td>12.07 - 23.08</td><td><span class="product-price"><em>&euro;&nbsp;</em>65</span></td><td>7</td></tr>
 								<tr><td>23.08 - 30.08</td><td><span class="product-price"><em>&euro;&nbsp;</em>60</span></td><td>7</td></tr>
-								<tr><td>30.08 - 27.09</td><td><span class="product-price"><em>&euro;&nbsp;</em>50</span></td><td>5</td></tr>
+								<!-- <tr><td>30.08 - 27.09</td><td><span class="product-price"><em>&euro;&nbsp;</em>50</span></td><td>5</td></tr> -->
+								<tr>
+									<td>30.08 - 27.09</td>
+									<td>
+										<span class="product-price">
+											<span class="strike"><em>&euro;&nbsp;</em>50</span>&nbsp;<em>&euro;&nbsp;</em>45
+										</span>
+									</td>
+									<td>5</td>
+								</tr>
 								<tr><td>27.09 - 31.12</td><td><span class="product-price"><em>&euro;&nbsp;</em>40</span></td><td>3</td></tr>
 							</tbody>
 						</table>
@@ -226,7 +235,16 @@
 								<tr><td>28.06 - 12.07</td><td><span class="product-price"><em>&euro;&nbsp;</em>70</span></td><td>7</td></tr>
 								<tr><td>12.07 - 23.08</td><td><span class="product-price"><em>&euro;&nbsp;</em>75</span></td><td>7</td></tr>
 								<tr><td>23.08 - 30.08</td><td><span class="product-price"><em>&euro;&nbsp;</em>70</span></td><td>7</td></tr>
-								<tr><td>30.08 - 27.09</td><td><span class="product-price"><em>&euro;&nbsp;</em>55</span></td><td>5</td></tr>
+								<!-- <tr><td>30.08 - 27.09</td><td><span class="product-price"><em>&euro;&nbsp;</em>55</span></td><td>5</td></tr> -->
+								<tr>
+									<td>30.08 - 27.09</td>
+									<td>
+										<span class="product-price">
+											<span class="strike"><em>&euro;&nbsp;</em>55</span>&nbsp;<em>&euro;&nbsp;</em>50
+										</span>
+									</td>
+									<td>5</td>
+								</tr>
 								<tr><td>27.09 - 31.12</td><td><span class="product-price"><em>&euro;&nbsp;</em>45</span></td><td>3</td></tr>
 							</tbody>
 						</table>

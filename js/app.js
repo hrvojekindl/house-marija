@@ -28,7 +28,7 @@ require(
 ],
 function($) {
 	$(document).ready(function() {
-		// write email
+		// write emails
 		(function() {
 			var t = '';
 			var m = 'u"ch@jo:l. s>f<me/ayi=rt';
@@ -37,6 +37,15 @@ function($) {
 				t += m.charAt(i.charCodeAt(j) - 48);
 			}
 			$('#contact td.email').html(t);
+		})();
+		(function() {
+			var t = '';
+			var m = '@_ tp:>ris"ylf.a=eh23cm<o/';
+			var i = 'G?2B7A=@:F?8<3H598FA1CD470;?BHH>EHF:698FA1CD470;?BHH>EHFGI?6';
+			for (var j = 0; j < i.length; j++) {
+				t += m.charAt(i.charCodeAt(j) - 48);
+			}
+			$('#contact td.email2').html(t);
 		})();
 
 		// init navigation

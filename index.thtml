@@ -106,6 +106,7 @@
 							<li><%= replace "house-bullet5" %></li>
 							<li><%= replace "house-bullet6" %></li>
 							<li><%= replace "house-bullet7" %></li>
+							<li><%= replace "house-bullet8" %></li>
 						</ul>
 					</div>
 				</div>

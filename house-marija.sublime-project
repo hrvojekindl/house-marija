@@ -10,6 +10,7 @@
 		{
 			"shell": true,
 			"name": "house-marija",
+			// node r.js -o build-js.conf.js & node r.js -o build-css.conf.js & rake build --trace
 			"cmd": ["node", "r.js", "-o", "build-js.conf.js", "&", "node", "r.js", "-o", "build-css.conf.js", "&", "rake", "build", "--trace"]
 			//"working_dir ": "${project_path}"
 		}

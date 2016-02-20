@@ -3750,6 +3750,12 @@ address {
 li {
 	line-height: 25px;
 }
+sup.star {
+  top: -0.3em;
+  padding: 0 0.1em;
+  font-size: 80%;
+  font-weight: bold;
+}
 a:focus {
 	outline: none;
 }

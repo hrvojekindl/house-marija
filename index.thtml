@@ -248,6 +248,7 @@
 				</div>
 				<div class="row-fluid">
 					<p><%= replace "conditions" %></p>
+					<p><sup class="star">*</sup><%= replace "starred-1" %></p>
 				</div>
 			</div>
 		</section>

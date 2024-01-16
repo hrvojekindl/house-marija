@@ -291,7 +291,7 @@
 
 		<!-- SCRIPTS -->
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLAjuqqIGb_61qzvO2ALQEgTHrVs6QhuA&sensor=false"></script>
-		<script src=<%= replace "language-js-src" %></script>
+		<script src=<%= replace "language-js-src" %>></script>
 		<script type="text/javascript" src="js/app.built.js"></script>
 	</body>
 </html>
